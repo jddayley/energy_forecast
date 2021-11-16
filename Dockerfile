@@ -29,8 +29,8 @@ RUN pip install plotly
 WORKDIR /forecast
 COPY . /forecast/
 #CMD ["/bin/bash"]
-#EXPOSE 8888:8888
+EXPOSE 8888:8888
 COPY start-notebook.sh /usr/local/bin/  
 RUN chmod +x /usr/local/bin/start-notebook.sh
-CMD ["start-notebook.sh"]
+CMD ["/bin/sh /usr/local/bin/start-notebook.sh]
 #CMD [ "python", "./run_forecast.py" ]
