@@ -2,7 +2,7 @@
 # Build image: docker build -f Dockerfile-Debian -t forecast:R1 .
 
 FROM ubuntu:latest
-MAINTAINER Stefan Proell <stefan.proell@cropster.com>
+MAINTAINER Don Dayley <jddayley@gmail.com>
 
 RUN apt-get -y update  && apt-get install -y \
   python3-dev \
@@ -31,6 +31,7 @@ COPY . /forecast/
 #CMD ["/bin/bash"]
 EXPOSE 8888:8888
 COPY start-notebook.sh /usr/local/bin/  
-RUN chmod +x /usr/local/bin/start-notebook.sh
-CMD ["/bin/sh /usr/local/bin/start-notebook.sh]
+RUN chmod 755 /usr/local/bin/start-notebook.sh
+ENTRYPOINT ["/usr/local/bin/start-notebook.sh"]
+#CMD ["/bin/sh", "/usr/local/bin/start-notebook.sh"]
 #CMD [ "python", "./run_forecast.py" ]
