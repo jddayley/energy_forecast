@@ -6,3 +6,4 @@ simplejson
 configparser
 boto
 gunicorn
+neuralprophet

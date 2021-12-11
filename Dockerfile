@@ -25,7 +25,9 @@ RUN pip install sqlalchemy
 RUN pip install jupyterlab
 RUN pip install notebook
 RUN pip install plotly
-
+#Fix TimeZone issue.
+ENV TZ=America/New_York
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 WORKDIR /forecast
 COPY . /forecast/
 #CMD ["/bin/bash"]
