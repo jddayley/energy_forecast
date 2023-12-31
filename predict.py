@@ -4,7 +4,7 @@ from prophet import Prophet
 import matplotlib.pyplot as plt
 
 # Read the data and set low_memory=False
-energy_df = pd.read_csv('forecast_new.csv', low_memory=False, comment='#')
+energy_df = pd.read_csv('historical_data.csv', low_memory=False, comment='#')
 
 # Print the column names to check the correct column name
 print("Columns in the dataset:", energy_df.columns.tolist())
