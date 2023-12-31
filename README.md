@@ -24,18 +24,22 @@ You can install the necessary libraries using pip:
 ```
 pip install pandas matplotlib prophet
 Installing
+```
 A step-by-step guide to setting up a development environment:
 
 Clone the repository:
-
+```
 git clone https://github.com/your-username/your-repository.git
+```
 Navigate to the project directory:
 
+```
 cd your-repository
+```
 Install the required packages:
-
+```
 pip install -r requirements.txt
-Running the Tests
+```
 
 
 
@@ -49,11 +53,3 @@ License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
 
 Acknowledgments
-
-Hat tip to Sense.com for providing the data used in this project.
-Inspiration
-etc.
-javascript
-
-
-Again, replace `your-username`, `your-repository`, and other placeholders with your actual GitHub username, repository name, and other relevant information. This template now includes the specific mention of Sense.com as the data source for the energy consumption forecasting project.
