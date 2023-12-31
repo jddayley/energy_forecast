@@ -1,14 +1,13 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, jsonify, render_template
 import pandas as pd
 from prophet import Prophet
 import matplotlib
-import matplotlib.dates as mdates
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
 import base64
 from io import BytesIO
-
-app = Flask(__name__)
+application = Flask(__name__)
 
 # Read and preprocess the forecast data
 forecast_df = pd.read_csv('forecast_new.csv', comment='#')
@@ -19,7 +18,7 @@ forecast_df.rename(columns={'kWh': 'y'}, inplace=True)
 model = Prophet(daily_seasonality=True)
 model.fit(forecast_df)
 
-@app.route('/', methods=['GET', 'POST'])
+@application.route('/', methods=['GET', 'POST'])
 def index():
     forecast_data = None
     graph_url = None
@@ -92,7 +91,7 @@ def get_forecast_for_period(model, start_date, period):
     elif period == 'week':
         end_date = start_date + pd.Timedelta(weeks=1)
     elif period == 'month':
-        end_date = start_date + pd.Timedelta(days=30)  # Approximation of a month
+        end_date = start_date + pd.Timedelta(days=30)  # applicationroximation of a month
 
     future_dates = pd.date_range(start=start_date, end=end_date, freq='H')
     future = pd.DataFrame(future_dates, columns=['ds'])
@@ -105,7 +104,7 @@ def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ['csv']
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    application.run(debug=True)
 
 def plot_forecast(forecast, actual, date):
     plt.figure(figsize=(10, 4))
@@ -128,8 +127,47 @@ def plot_forecast(forecast, actual, date):
     plt.close()
     return f"data:image/png;base64,{image_base64}"
 
+@application.route('/api/upload_actuals', methods=['POST'])
+def upload_actuals():
+    file = request.files['file']
+    input_date = request.form.get('date')
+    time_range = request.form.get('range', 'day')
+
+    if file:
+        actual_df = pd.read_csv(file, comment='#')
+        actual_df['ds'] = pd.to_datetime(actual_df['DateTime'])
+        actual_df['y'] = actual_df['kWh'] * 1000  # Convert kWh to watts
+
+        forecast = get_forecast_for_period(model, pd.to_datetime(input_date), time_range)
+        graph_url = plot_forecast(forecast, actual_df, input_date)
+        return jsonify({'graph': graph_url})
+
+    return jsonify({'error': 'No file provided'}), 400
+
+    return jsonify({'error': 'No file provided'}), 400
+def api_forecast():
+    data = request.get_json()
+    input_date = data.get('date')
+    time_range = data.get('range', 'day')
+
+    try:
+        start_date = pd.to_datetime(input_date)
+    except (ValueError, TypeError):
+        return jsonify({'error': 'Invalid date format'}), 400
+
+    forecast = get_forecast_for_period(model, start_date, time_range)
+
+    actual_df = pd.DataFrame(data.get('actuals', []))
+    if not actual_df.empty:
+        actual_df['ds'] = pd.to_datetime(actual_df['DateTime'])
+        actual_df['y'] = actual_df['kWh'] * 1000
+        actual_df = actual_df.groupby('ds').agg({'y': 'sum'}).reset_index()
+
+    graph_url = plot_forecast(forecast, actual_df, start_date)
+    return jsonify({'forecast': forecast.to_dict(orient='records'), 'graph': graph_url})
+
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ['csv']
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    application.run(debug=True)
