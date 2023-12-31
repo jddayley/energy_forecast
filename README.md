@@ -14,7 +14,7 @@ The main goal of this project is to provide accurate forecasts of energy consump
 </div>
 
 # Energy Consumption Forecasting Application
-<img src="app.png"/>
+<img src="app_ss.png"/>
 ## Overview
 This Flask application provides energy consumption forecasting using the Prophet model. It allows users to upload actual energy consumption data and compare it with forecasted data.
 
