@@ -2,6 +2,7 @@ from flask import Flask, request, render_template
 import pandas as pd
 from prophet import Prophet
 import matplotlib
+import matplotlib.dates as mdates
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import base64
@@ -59,11 +60,18 @@ def plot_forecast(forecast, actual, date):
     plt.figure(figsize=(10, 4))
     plt.plot(forecast['ds'], forecast['yhat_watts'], label='Predicted')
     plt.fill_between(forecast['ds'], forecast['yhat_lower'] * 1000, forecast['yhat_upper'] * 1000, alpha=0.3)
+    
     if not actual.empty:
         plt.scatter(actual['ds'], actual['y'], color='red', label='Actual')
+    
     plt.title(f'Hourly Energy Consumption Forecast vs Actual for {date}')
     plt.xlabel('Hour')
     plt.ylabel('Energy Consumption (Watts)')
+
+    # Set x-axis to display AM/PM format
+    plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%I:%M %p'))
+    plt.gca().xaxis.set_major_locator(mdates.HourLocator(interval=4))
+    
     plt.xticks(rotation=45)
     plt.tight_layout()
     plt.legend()
@@ -74,6 +82,7 @@ def plot_forecast(forecast, actual, date):
     image_base64 = base64.b64encode(buf.read()).decode('utf-8')
     buf.close()
     plt.close()
+
     return f"data:image/png;base64,{image_base64}"
 
 def get_forecast_for_period(model, start_date, period):
