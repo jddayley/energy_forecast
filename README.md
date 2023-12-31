@@ -1,7 +1,7 @@
 # Energy Consumption Forecasting with Prophet
-
-<img src="Electric_Forecast_1.png" size="50%"/>
-
+<div align="center">
+<img src="Electric_Forecast_1.png" width="25%" >
+</div>
 This repository contains the code and datasets used for forecasting energy consumption based on data from Sense.com using Facebook's Prophet time series forecasting tool. The project focuses on predicting future energy consumption based on historical data gathered from Sense.com's smart energy monitoring devices.
 
 ## Project Overview
