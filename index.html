@@ -2,31 +2,47 @@
 <html>
 <head>
     <title>Energy Consumption Forecast</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#forecastTable').DataTable();
+        });
+    </script>
 </head>
 <body>
-    <h1>Energy Consumption Forecast</h1>
-    <form method="post" enctype="multipart/form-data">
-        <label for="date">Enter Start Date (YYYY-MM-DD):</label>
-        <input type="date" id="date" name="date"><br><br>
-        
-        <label for="range">Select Range:</label>
-        <select name="range" id="range">
-            <option value="day">Day</option>
-            <option value="week">Week</option>
-            <option value="month">Month</option>
-        </select><br><br>
-        
-        <label for="file">Upload Actual Data File (Optional):</label>
-        <input type="file" id="file" name="file"><br><br>
-        
-        <input type="submit" value="Get Forecast">
-    </form>
-    {% if forecast_data %}
-        <h2>Forecast for {{ request.form['date'] }} - {{ request.form['range'] }}</h2>
-        {{ forecast_data|safe }}
+    <div class="container mt-5">
+        <h1 class="text-center">Energy Consumption Forecast</h1>
+        <form method="post" enctype="multipart/form-data" class="mb-5">
+            <div class="form-group">
+                <label for="date">Enter Start Date (YYYY-MM-DD):</label>
+                <input type="date" id="date" name="date" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="range">Select Range:</label>
+                <select name="range" id="range" class="form-control">
+                    <option value="day">Day</option>
+                    <option value="week">Week</option>
+                    <option value="month">Month</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="file">Upload Actual Data File (Optional):</label>
+                <input type="file" id="file" name="file" class="form-control-file">
+            </div>
+            <button type="submit" class="btn btn-primary">Get Forecast</button>
+        </form>
         {% if graph_url %}
-            <img src="{{ graph_url }}" alt="Forecast Graph">
+            <img src="{{ graph_url }}" alt="Forecast Graph" class="img-fluid mb-3">
         {% endif %}
-    {% endif %}
+        {% if forecast_data %}
+            <div class="table-responsive">
+                {{ forecast_data|safe }}
+            </div>
+        {% endif %}
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
