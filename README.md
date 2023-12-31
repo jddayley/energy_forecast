@@ -13,39 +13,35 @@ The main goal of this project is to provide accurate forecasts of energy consump
   <img src="screenshot_2.png" width="75%" >
 </div>
 
-## Getting Started
+# Energy Consumption Forecasting Application
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+## Overview
+This Flask application provides energy consumption forecasting using the Prophet model. It allows users to upload actual energy consumption data and compare it with forecasted data.
 
-### Prerequisites
+## Features
+- Forecast energy consumption based on historical data.
+- Upload actual energy consumption data via API.
+- Compare forecasted data with actual data visually.
 
-What you need to install the software:
+## Installation
+To set up the application, follow these steps:
+1. Clone the repository: `git clone [repository-url]`
+2. Install dependencies: `pip install -r requirements.txt`
+3. Run the application: `flask run`
 
-- Python 3.x
-- Pandas library
-- Prophet library
-- Matplotlib library (for plotting)
+## Usage
+To use the application, navigate to `http://localhost:5000`. To use the API:
+- Endpoint: `/api/upload_actuals`
+- Method: POST
+- Data: File upload with actuals data
 
-You can install the necessary libraries using pip:
-
-```
-pip install pandas matplotlib prophet
-Installing
-```
-A step-by-step guide to setting up a development environment:
-
-Clone the repository:
-```
-git clone https://github.com/your-username/your-repository.git
-```
-Navigate to the project directory:
-
-```
-cd your-repository
-```
-Install the required packages:
-```
-pip install -r requirements.txt
+## API Example
+Using `curl`:
+```bash
+curl -X POST http://localhost:5000/api/upload_actuals \
+-F "file=@/path/to/your/actuals.csv" \
+-F "date=2023-01-01" \
+-F "range=day"
 ```
 
 
