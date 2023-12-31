@@ -30,7 +30,10 @@ To set up the application, follow these steps:
 3. Run the application: `flask run`
 
 ## Usage
-To use the application, navigate to `http://localhost:5000`. To use the API:
+To use the application:
+ - Navigate to `http://localhost:5000`.
+
+To use the API:
 - Endpoint: `/api/upload_actuals`
 - Method: POST
 - Data: File upload with actuals data
