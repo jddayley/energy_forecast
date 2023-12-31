@@ -11,6 +11,14 @@
             $('#forecastTable').DataTable();
         });
     </script>
+    <script>
+        // ... [other scripts]
+        $(document).ready(function() {
+            $('#date').on('change', function() {
+                $(this).blur();  // Hide date picker
+            });
+        });
+    </script>
 </head>
 <body>
     <div class="container mt-5">
