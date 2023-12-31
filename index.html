@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Energy Consumption Forecast</title>
+</head>
+<body>
+    <h1>Energy Consumption Forecast</h1>
+    <form method="post">
+        <label for="date">Enter Date (YYYY-MM-DD):</label>
+        <input type="date" id="date" name="date">
+        <input type="submit" value="Get Forecast">
+    </form>
+    {% if forecast_data %}
+        <h2>Forecast for {{ request.form['date'] }}</h2>
+        {{ forecast_data|safe }}
+    {% endif %}
+</body>
+</html>
