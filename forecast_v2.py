@@ -1,26 +1,21 @@
 # Import necessary libraries
-from prophet import Prophet
 import pandas as pd
+from prophet import Prophet
 import matplotlib.pyplot as plt
-from math import log, exp
 
-# Read the data
-energy_df = pd.read_csv('forecast.csv')
+# Read the data and set low_memory=False
+energy_df = pd.read_csv('forecast_new.csv', low_memory=False, comment='#')
 
-# Format the 'DateTime' column and select relevant columns for forecasting
-energy_df['ds'] = pd.to_datetime(energy_df['DateTime'])
-energy_df['y'] = energy_df['kWh']  # Target variable for forecasting
+# Print the column names to check the correct column name
+print("Columns in the dataset:", energy_df.columns.tolist())
+
+# Replace 'DateTime' with the correct column name from your CSV file
+# For example, if the correct column name is 'Date_Time', replace 'DateTime' with 'Date_Time'
+energy_df['ds'] = pd.to_datetime(energy_df['DateTime'])  # Modify 'DateTime' as needed
 
 # Aggregate data by time to get total energy consumption per timestamp
-# This step sums up the kWh usage for all devices for each timestamp
-energy_df = energy_df.groupby('ds').agg({'y': 'sum'}).reset_index()
-
-# Create a copy of the original data for later comparison
-energy_df['y_orig'] = energy_df['y']
-
-# Apply log transformation to stabilize variance (optional)
-# Uncomment the following line if you decide to use log transformation
-# energy_df['y'] = energy_df['y'].apply(lambda x: log(x) if x > 0 else 0)
+energy_df = energy_df.groupby('ds').agg({'kWh': 'sum'}).reset_index()
+energy_df.rename(columns={'kWh': 'y'}, inplace=True)
 
 # Initialize the Prophet model with yearly seasonality
 model = Prophet(yearly_seasonality=True)
@@ -28,26 +23,20 @@ model = Prophet(yearly_seasonality=True)
 # Fit the model with the dataset
 model.fit(energy_df)
 
-# Create a future dataframe for the next 365 days
-future = model.make_future_dataframe(periods=365)
+# Create a future dataframe
+future = model.make_future_dataframe(periods=365, freq='D')
 
 # Make predictions
 forecast = model.predict(future)
 
 # Plot the forecast
-fig1 = model.plot(forecast)
+model.plot(forecast)
 plt.title('Energy Consumption Forecast')
 plt.show()
 
 # Plot the forecast components
-fig2 = model.plot_components(forecast)
+model.plot_components(forecast)
 plt.show()
-
-# Optional: Revert log transformation for interpretability
-# Uncomment the following lines if you used log transformation
-# forecast['yhat_exp'] = forecast['yhat'].apply(exp)
-# forecast['yhat_lower_exp'] = forecast['yhat_lower'].apply(exp)
-# forecast['yhat_upper_exp'] = forecast['yhat_upper'].apply(exp)
 
 # Display the tail of the forecast dataframe
 forecast[['ds', 'yhat', 'yhat_lower', 'yhat_upper']].tail()
