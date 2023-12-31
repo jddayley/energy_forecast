@@ -8,6 +8,11 @@ This repository contains the code and datasets used for forecasting energy consu
 
 The main goal of this project is to provide accurate forecasts of energy consumption using data from Sense.com. By analyzing historical consumption data from various devices monitored by Sense.com, this project aims to predict future energy usage, which can be critical for efficient energy management, cost reduction, and understanding consumption patterns. The forecasting model is built using the Prophet library, designed to handle time series data with daily or sub-daily observations.
 
+<div align="center">
+<img src="screenshot.png" width="75%" >
+  <img src="screenshot_2.png" width="75%" >
+</div>
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
