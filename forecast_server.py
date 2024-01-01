@@ -81,8 +81,69 @@ def plot_forecast(forecast, actual, date):
     image_base64 = base64.b64encode(buf.read()).decode('utf-8')
     buf.close()
     plt.close()
-
     return f"data:image/png;base64,{image_base64}"
+
+@application.route('/api/upload_actuals', methods=['POST'])
+def upload_actuals():
+    file = request.files['file']
+    input_date = request.form.get('date')
+    time_range = request.form.get('range', 'day')
+
+    if file:
+        
+        actual_df = pd.read_csv(file, comment='#')
+        actual_df['ds'] = pd.to_datetime(actual_df['DateTime'])
+        actual_df['y'] = actual_df['kWh'] * 1000  # Convert kWh to watts
+
+        # Aggregate actual data by datetime
+        actual_df = actual_df.groupby('ds').agg({'y': 'sum'}).reset_index()
+        forecast = get_forecast_for_period(model, pd.to_datetime(input_date), time_range)
+        graph_url = plot_forecast(forecast, actual_df, input_date)
+        return jsonify({'graph': graph_url})
+
+    return jsonify({'error': 'No file provided'}), 400
+@application.route('/forecast_components', methods=['GET', 'POST'])
+def forecast_components():
+    if request.method == 'POST':
+        # Assuming you have a form input where the user can enter a date
+        input_date = request.form.get('date')
+        time_range = request.form.get('range', 'day')  # Default to 'day' if not specified
+
+        if input_date:
+            try:
+                start_date = pd.to_datetime(input_date)
+            except ValueError:
+                # Handle invalid date input
+                start_date = pd.to_datetime('today')  # Default to today or handle the error as needed
+
+            # Generate forecast using your existing logic
+            forecast = get_forecast_for_period(model, start_date, time_range)
+            future = model.make_future_dataframe(periods=30)
+
+            # Forecast
+            forecast = model.predict(future)
+            #print(forecast.columns)
+            # Generate the components plot
+            graph_url = plot_forecast_components(model, forecast)
+
+            return render_template('forecast_components.html', graph_url=graph_url)
+        else:
+            # Handle case where date is not entered or invalid
+            # You may want to send an error message to the template or handle it differently
+            pass
+
+    return render_template('forecast_components.html')
+
+def plot_forecast_components(model, forecast):
+    fig = model.plot_components(forecast)
+    buf = BytesIO()
+    fig.savefig(buf, format='png', bbox_inches='tight')
+    buf.seek(0)
+    image_base64 = base64.b64encode(buf.read()).decode('utf-8')
+    buf.close()
+    plt.close(fig)
+    return f"data:image/png;base64,{image_base64}"
+
 
 def get_forecast_for_period(model, start_date, period):
     # Determine end_date based on period
@@ -91,13 +152,15 @@ def get_forecast_for_period(model, start_date, period):
     elif period == 'week':
         end_date = start_date + pd.Timedelta(weeks=1)
     elif period == 'month':
-        end_date = start_date + pd.Timedelta(days=30)  # applicationroximation of a month
+        end_date = start_date + pd.Timedelta(days=30)  # Approximation of a month
+    else:
+        raise ValueError(f"Invalid period: {period}")
 
     future_dates = pd.date_range(start=start_date, end=end_date, freq='H')
     future = pd.DataFrame(future_dates, columns=['ds'])
     forecast = model.predict(future)
     forecast['yhat_watts'] = forecast['yhat'] * 1000
-    return forecast[['ds', 'yhat_watts', 'yhat_lower', 'yhat_upper']]
+    return forecast[['ds', 'yhat_watts', 'yhat_lower', 'yhat_upper', 'trend', 'trend_lower', 'trend_upper']]
 
 
 def allowed_file(filename):
@@ -127,24 +190,9 @@ def plot_forecast(forecast, actual, date):
     plt.close()
     return f"data:image/png;base64,{image_base64}"
 
-@application.route('/api/upload_actuals', methods=['POST'])
-def upload_actuals():
-    file = request.files['file']
-    input_date = request.form.get('date')
-    time_range = request.form.get('range', 'day')
 
-    if file:
-        actual_df = pd.read_csv(file, comment='#')
-        actual_df['ds'] = pd.to_datetime(actual_df['DateTime'])
-        actual_df['y'] = actual_df['kWh'] * 1000  # Convert kWh to watts
 
-        forecast = get_forecast_for_period(model, pd.to_datetime(input_date), time_range)
-        graph_url = plot_forecast(forecast, actual_df, input_date)
-        return jsonify({'graph': graph_url})
-
-    return jsonify({'error': 'No file provided'}), 400
-
-    return jsonify({'error': 'No file provided'}), 400
+    #return jsonify({'error': 'No file provided'}), 400
 def api_forecast():
     data = request.get_json()
     input_date = data.get('date')
