@@ -21,6 +21,20 @@
     </script>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Energy Forecast</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/forecast_components">Forecast Components</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="container mt-5">
         <h1 class="text-center">Energy Consumption Forecast</h1>
         <form method="post" enctype="multipart/form-data" class="mb-5">
@@ -42,6 +56,7 @@
             </div>
             <button type="submit" class="btn btn-primary">Get Forecast</button>
         </form>
+
         {% if graph_url %}
             <img src="{{ graph_url }}" alt="Forecast Graph" class="img-fluid mb-3">
         {% endif %}
@@ -52,5 +67,6 @@
         {% endif %}
     </div>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
+<!-- Other HTML content -->
+
+
