@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Energy Consumption Forecast</title>
+    {% include 'scripts.html' %}
+</head>
+<body>
+    
+    {% include 'navbar.html' %}
+    <div class="container mt-5">
+        <h1>Forecast Components</h1>
+        <form action="/forecast_components" method="post">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="range">Time Range:</label>
+            <select id="range" name="range">
+                <option value="day">Day</option>
+                <option value="week">Week</option>
+                <option value="month">Month</option>
+            </select>
+
+            <button type="submit">Get Forecast</button>
+        </form>
+        {% if graph_url %}
+            <img src="{{ graph_url }}" alt="Forecast Graph" class="img-fluid mb-3">
+        {% endif %}
+    </div>
+</body>
+</html>
