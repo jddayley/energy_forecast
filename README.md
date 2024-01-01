@@ -1,6 +1,6 @@
 # Energy Consumption Forecasting with Prophet
 <div align="center">
-<img src="Electric_Forecast_1.png" width="25%" >
+<img src="img/Electric_Forecast_1.png" width="25%" >
 </div>
 This repository contains the code and datasets used for forecasting energy consumption based on data from Sense.com using Facebook's Prophet time series forecasting tool. The project focuses on predicting future energy consumption based on historical data gathered from Sense.com's smart energy monitoring devices.
 
@@ -9,12 +9,12 @@ This repository contains the code and datasets used for forecasting energy consu
 The main goal of this project is to provide accurate forecasts of energy consumption using data from Sense.com. By analyzing historical consumption data from various devices monitored by Sense.com, this project aims to predict future energy usage, which can be critical for efficient energy management, cost reduction, and understanding consumption patterns. The forecasting model is built using the Prophet library, designed to handle time series data with daily or sub-daily observations.
 
 <div align="center">
-<img src="screenshot.png" width="75%" >
-  <img src="screenshot_2.png" width="75%" >
+<img src="img/screenshot.png" width="75%" >
+  <img src="img/screenshot_2.png" width="75%" >
 </div>
 
 # Energy Consumption Forecasting Application
-<img src="app-ss.png"/>
+<img src="img/app-ss.png"/>
 ## Overview
 This Flask application provides energy consumption forecasting using the Prophet model. It allows users to upload actual energy consumption data and compare it with forecasted data.
 
