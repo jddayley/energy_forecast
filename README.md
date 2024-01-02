@@ -40,6 +40,22 @@ Before running the application, ensure that you have Python and all required lib
  source venv/bin/activate  # On Windows use `venv\Scripts\activate
  pip install -r requirements.txt
 ```
+
+## Overview
+The application will start running on http://localhost:5000.
+
+**Uploading Data**
+Navigate to the upload page at http://localhost:5000/upload.
+Choose your CSV file and click 'Upload'
+
+**Viewing Forecasts**
+Select a device and time range on the homepage.
+Submit the form to view the energy consumption forecast.
+
+**Comparing with Actual Data**
+Use the 'Upload Actuals' API endpoint to upload actual consumption data.
+The forecast graph will update to show a comparison between predicted and actual data.
+
 ## Usage
 
 Starting the Flask Server
@@ -58,16 +74,6 @@ To use the API:
 - Data: File upload with actuals data
 
 
-The application will start running on http://localhost:5000.
-**Uploading Data**
-Navigate to the upload page at http://localhost:5000/upload.
-Choose your CSV file and click 'Upload'
-**Viewing Forecasts**
-Select a device and time range on the homepage.
-Submit the form to view the energy consumption forecast.
-**Comparing with Actual Data**
-Use the 'Upload Actuals' API endpoint to upload actual consumption data.
-The forecast graph will update to show a comparison between predicted and actual data.
 
 ## API Example
 Using `curl`:
