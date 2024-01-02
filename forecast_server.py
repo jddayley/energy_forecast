@@ -183,9 +183,9 @@ def device_forecast():
     forecast_data = None
     graph_url = None
     print("Debug")
-    print(forecast_df.columns)
+    #print(forecast_df.columns)
     top_devices = get_top_devices()
-    print(top_devices)
+    #print(top_devices)
     unique_devices = forecast_df[['Device ID', 'Name']].drop_duplicates()
     # Assuming total_watts_by_device and unique_devices are already defined
 
@@ -199,7 +199,7 @@ def device_forecast():
     # Filter unique_devices to include only those in top_device_ids
     unique_devices = unique_devices[unique_devices['Device ID'].isin(top_device_ids)]
 
-    print(unique_devices)
+    #print(unique_devices)
         #unique_devices_filtered = unique_devices[unique_devices['Device ID'].isin(top_devices)]
 
 
