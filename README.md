@@ -44,15 +44,15 @@ Before running the application, ensure that you have Python and all required lib
 ## Overview
 The application will start running on http://localhost:5000.
 
-**Uploading Data**
+#### Uploading Data 
 Navigate to the upload page at http://localhost:5000/upload.
 Choose your CSV file and click 'Upload'
 
-**Viewing Forecasts**
+#### Viewing Forecast 
 Select a device and time range on the homepage.
 Submit the form to view the energy consumption forecast.
 
-**Comparing with Actual Data**
+#### Comparing with Actual Data
 Use the 'Upload Actuals' API endpoint to upload actual consumption data.
 The forecast graph will update to show a comparison between predicted and actual data.
 
