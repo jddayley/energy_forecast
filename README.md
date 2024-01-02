@@ -41,6 +41,14 @@ Before running the application, ensure that you have Python and all required lib
  pip install -r requirements.txt
 ```
 ## Usage
+
+Starting the Flask Server
+Run the Flask application with:
+
+```bash
+python forecast_server.py
+```
+
 To use the application:
  - Navigate to `http://localhost:5000`.
 
@@ -49,48 +57,6 @@ To use the API:
 - Method: POST
 - Data: File upload with actuals data
 
-# Energy Consumption Forecasting Application
-
-## Introduction
-
-This Flask application provides a platform for energy consumption forecasting using Facebook's Prophet time series forecasting tool. The application allows users to upload historical energy consumption data, view forecasts for energy usage, and analyze the performance of predictions against actual data.
-
-## Features
-
-- **Data Upload**: Users can upload their own dataset in CSV format for forecasting.
-- **Forecast Visualization**: View energy consumption forecasts over a specified time range.
-- **Comparison with Actual Data**: Users can upload actual consumption data to compare against forecasts.
-- **Top 10 Device Analysis**: Analyze energy consumption patterns for the top 10 most energy-intensive devices.
-
-## Installation
-
-Before running the application, ensure that you have Python and all required libraries installed. The main dependencies are Flask and Prophet.
-
-1. **Clone the Repository**
-
-   ```bash
-   git clone https://your-repository-url.git
-   cd your-repository-folder
-   ```
-**Set Up a Virtual Environment (Optional but recommended)**
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-```
-**Install Dependencies**
-```bash
-pip install -r requirements.txt
-```
-
-## Usage
-
-Starting the Flask Server
-Run the Flask application with:
-
-```bash
-Copy code
-python forecast_server.py
-```
 
 The application will start running on http://localhost:5000.
 **Uploading Data**
