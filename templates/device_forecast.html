@@ -2,18 +2,21 @@
 <html>
 <head>
     <title>Energy Consumption Forecast</title>
- {% include 'navbar.html' %}
+    {% include 'scripts.html' %}
 </head>
 <body>
     {% include 'navbar.html' %}
     <h1>Device Forecast</h1>
+
     <form action="/device_forecast" method="post">
         <label for="device_id">Device ID:</label>
         <label for="device_id">Select Device:</label>
         <select id="device_id" name="device_id" required>
-            {% for device in devices.itertuples() %}
-                <option value="{{ device[1] }}">{{ device[2] }} ({{ device[1] }})</option>
+            {% for device in unique_devices.itertuples() %}
+                <option value="{{device._1}}">{{ device.Name }}</option>
             {% endfor %}
+        
+        </select>
         </select>
         <label for="range">Time Range:</label>
         <select id="range" name="range">
@@ -28,27 +31,7 @@
         <div>{{ forecast_data|safe }}</div>
     {% endif %}
 
-    <form action="/path_to_your_form_handler" method="post">
-        <label for="devices">Choose devices (up to 10):</label>
-        <select name="devices" id="devices" multiple size="10">
-            {% for device in unique_devices %}
-                <option value="{{ device }}" {% if device in top_10_devices %} selected {% endif %}>
-                    {{ device }}
-                </option>
-            {% endfor %}
-        </select>
-        <input type="submit" value="Submit">
-    </form>
 
-    <script>
-        document.getElementById('devices').addEventListener('change', function () {
-            var selectedOptions = this.selectedOptions;
-            if (selectedOptions.length > 10) {
-                alert('You can select up to 10 devices.');
-                // Revert to the last valid selection
-                this.selectedIndex = -1;
-            }
-        });
-    </script>
+
 </body>
 </html>

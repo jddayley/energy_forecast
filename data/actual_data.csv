@@ -1,0 +1,723 @@
+# Please note that there may be discrepancies between your electric bill and what Sense reports due to data interruptions (such as Wi-Fi signal loss or loss of power) or other issues.
+DateTime,Device ID,Name,Device Type,Device Make,Device Model,Device Location,Avg Wattage,kWh
+2023-12-30 00:00:00,ssi-a4b19bd,Night Fan,Smart Plug,,,,30.000,0.030
+2023-12-30 00:00:00,WMBobdaQ,Robo Vacuum,Smart Plug,,,,15.457,0.015
+2023-12-30 00:00:00,UsT4jYTY,"Hot water ",Smart Plug,,,,2.449,0.002
+2023-12-30 00:00:00,2MWspPfA,basementlivingroom,Smart Plug,,,,160.000,0.160
+2023-12-30 00:00:00,T5QgvHdg,1-6 - Hub,Smart Plug,,,,1.174,0.001
+2023-12-30 00:00:00,g33Phtuz,Fridge,Smart Plug,,,,53.884,0.054
+2023-12-30 00:00:00,tTMgrLYY,"2-3 UV ",Smart Plug,,,,41.151,0.041
+2023-12-30 00:00:00,0xuqZnaG,2-2 sub pump,Smart Plug,,,,0.489,0.000
+2023-12-30 00:00:00,ssi-55115a66,Dreame Vacuum,Smart Plug,,,,3.000,0.003
+2023-12-30 00:00:00,FJAoFYmy,1-3 - Host 2,Smart Plug,,,,0.042,0.000
+2023-12-30 00:00:00,genRkje3,6-5 Wifi,Smart Plug,,,,7.079,0.007
+2023-12-30 00:00:00,mains,Total Usage,,,,,672.689,0.673
+2023-12-30 00:00:00,DzRXlfw9,1-2,Smart Plug,,,,49.310,0.049
+2023-12-30 00:00:00,always_on,Always On,Always On,,,,272.000,0.272
+2023-12-30 00:00:00,yKe4nWHQ,1-5 - Host 1,Smart Plug,,,,13.253,0.013
+2023-12-30 00:00:00,FtqFkAJj,FrontYard,Smart Plug,,,,0.393,0.000
+2023-12-30 00:00:00,RrIafJpu,Radon Fan,Smart Plug,,,,59.000,0.059
+2023-12-30 00:00:00,RYQK85Ha,HVAC Upstairs,AC,,,,41.369,0.041
+2023-12-30 01:00:00,ssi-a4b19bd,Night Fan,Smart Plug,,,,30.000,0.030
+2023-12-30 01:00:00,WMBobdaQ,Robo Vacuum,Smart Plug,,,,3.000,0.003
+2023-12-30 01:00:00,UsT4jYTY,"Hot water ",Smart Plug,,,,3.149,0.003
+2023-12-30 01:00:00,78d58f33,Shoe Air Dryer,Mystery Heat,,,,1.757,0.002
+2023-12-30 01:00:00,2MWspPfA,basementlivingroom,Smart Plug,,,,160.000,0.160
+2023-12-30 01:00:00,T5QgvHdg,1-6 - Hub,Smart Plug,,,,1.176,0.001
+2023-12-30 01:00:00,g33Phtuz,Fridge,Smart Plug,,,,56.889,0.057
+2023-12-30 01:00:00,tTMgrLYY,"2-3 UV ",Smart Plug,,,,40.894,0.041
+2023-12-30 01:00:00,0xuqZnaG,2-2 sub pump,Smart Plug,,,,0.542,0.001
+2023-12-30 01:00:00,ssi-55115a66,Dreame Vacuum,Smart Plug,,,,3.000,0.003
+2023-12-30 01:00:00,FJAoFYmy,1-3 - Host 2,Smart Plug,,,,0.068,0.000
+2023-12-30 01:00:00,genRkje3,6-5 Wifi,Smart Plug,,,,7.049,0.007
+2023-12-30 01:00:00,mains,Total Usage,,,,,833.075,0.833
+2023-12-30 01:00:00,DzRXlfw9,1-2,Smart Plug,,,,8.133,0.008
+2023-12-30 01:00:00,always_on,Always On,Always On,,,,272.000,0.272
+2023-12-30 01:00:00,e4b9b934,Pump 3,Pump,,,,0.767,0.001
+2023-12-30 01:00:00,yKe4nWHQ,1-5 - Host 1,Smart Plug,,,,13.198,0.013
+2023-12-30 01:00:00,RrIafJpu,Radon Fan,Smart Plug,,,,59.000,0.059
+2023-12-30 01:00:00,6SjiiZ6h,HVAC Main,AC,,,,137.750,0.138
+2023-12-30 01:00:00,RYQK85Ha,HVAC Upstairs,AC,,,,88.333,0.088
+2023-12-30 02:00:00,ssi-a4b19bd,Night Fan,Smart Plug,,,,0.041,0.000
+2023-12-30 02:00:00,WMBobdaQ,Robo Vacuum,Smart Plug,,,,3.000,0.003
+2023-12-30 02:00:00,UsT4jYTY,"Hot water ",Smart Plug,,,,2.402,0.002
+2023-12-30 02:00:00,2MWspPfA,basementlivingroom,Smart Plug,,,,160.000,0.160
+2023-12-30 02:00:00,T5QgvHdg,1-6 - Hub,Smart Plug,,,,1.176,0.001
+2023-12-30 02:00:00,g33Phtuz,Fridge,Smart Plug,,,,169.498,0.169
+2023-12-30 02:00:00,tTMgrLYY,"2-3 UV ",Smart Plug,,,,41.557,0.042
+2023-12-30 02:00:00,0xuqZnaG,2-2 sub pump,Smart Plug,,,,0.546,0.001
+2023-12-30 02:00:00,ssi-55115a66,Dreame Vacuum,Smart Plug,,,,3.000,0.003
+2023-12-30 02:00:00,DnC2WeoP,Washer,Smart Plug,,,,0.005,0.000
+2023-12-30 02:00:00,FJAoFYmy,1-3 - Host 2,Smart Plug,,,,0.112,0.000
+2023-12-30 02:00:00,genRkje3,6-5 Wifi,Smart Plug,,,,7.004,0.007
+2023-12-30 02:00:00,mains,Total Usage,,,,,747.475,0.747
+2023-12-30 02:00:00,DzRXlfw9,1-2,Smart Plug,,,,42.039,0.042
+2023-12-30 02:00:00,always_on,Always On,Always On,,,,272.000,0.272
+2023-12-30 02:00:00,yKe4nWHQ,1-5 - Host 1,Smart Plug,,,,13.280,0.013
+2023-12-30 02:00:00,RrIafJpu,Radon Fan,Smart Plug,,,,59.000,0.059
+2023-12-30 02:00:00,RYQK85Ha,HVAC Upstairs,AC,,,,44.240,0.044
+2023-12-30 03:00:00,WMBobdaQ,Robo Vacuum,Smart Plug,,,,2.966,0.003
+2023-12-30 03:00:00,UsT4jYTY,"Hot water ",Smart Plug,,,,3.418,0.003
+2023-12-30 03:00:00,2MWspPfA,basementlivingroom,Smart Plug,,,,160.000,0.160
+2023-12-30 03:00:00,T5QgvHdg,1-6 - Hub,Smart Plug,,,,1.177,0.001
+2023-12-30 03:00:00,g33Phtuz,Fridge,Smart Plug,,,,149.279,0.149
+2023-12-30 03:00:00,tTMgrLYY,"2-3 UV ",Smart Plug,,,,41.740,0.042
+2023-12-30 03:00:00,0xuqZnaG,2-2 sub pump,Smart Plug,,,,0.512,0.001
+2023-12-30 03:00:00,ssi-55115a66,Dreame Vacuum,Smart Plug,,,,3.000,0.003
+2023-12-30 03:00:00,1499ddba,Well pump,Pump,,,"Basement ",18.118,0.018
+2023-12-30 03:00:00,FJAoFYmy,1-3 - Host 2,Smart Plug,,,,0.100,0.000
+2023-12-30 03:00:00,genRkje3,6-5 Wifi,Smart Plug,,,,6.998,0.007
+2023-12-30 03:00:00,mains,Total Usage,,,,,985.330,0.985
+2023-12-30 03:00:00,DzRXlfw9,1-2,Smart Plug,,,,44.477,0.044
+2023-12-30 03:00:00,always_on,Always On,Always On,,,,272.000,0.272
+2023-12-30 03:00:00,e4b9b934,Pump 3,Pump,,,,1.156,0.001
+2023-12-30 03:00:00,yKe4nWHQ,1-5 - Host 1,Smart Plug,,,,13.225,0.013
+2023-12-30 03:00:00,FtqFkAJj,FrontYard,Smart Plug,,,,0.536,0.001
+2023-12-30 03:00:00,RrIafJpu,Radon Fan,Smart Plug,,,,59.000,0.059
+2023-12-30 03:00:00,6SjiiZ6h,HVAC Main,AC,,,,138.700,0.139
+2023-12-30 03:00:00,RYQK85Ha,HVAC Upstairs,AC,,,,105.778,0.106
+2023-12-30 04:00:00,ssi-a4b19bd,Night Fan,Smart Plug,,,,1.716,0.002
+2023-12-30 04:00:00,WMBobdaQ,Robo Vacuum,Smart Plug,,,,3.000,0.003
+2023-12-30 04:00:00,UsT4jYTY,"Hot water ",Smart Plug,,,,2.398,0.002
+2023-12-30 04:00:00,2MWspPfA,basementlivingroom,Smart Plug,,,,160.000,0.160
+2023-12-30 04:00:00,T5QgvHdg,1-6 - Hub,Smart Plug,,,,1.177,0.001
+2023-12-30 04:00:00,g33Phtuz,Fridge,Smart Plug,,,,65.530,0.066
+2023-12-30 04:00:00,tTMgrLYY,"2-3 UV ",Smart Plug,,,,41.931,0.042
+2023-12-30 04:00:00,0xuqZnaG,2-2 sub pump,Smart Plug,,,,0.539,0.001
+2023-12-30 04:00:00,ssi-55115a66,Dreame Vacuum,Smart Plug,,,,13.488,0.013
+2023-12-30 04:00:00,FJAoFYmy,1-3 - Host 2,Smart Plug,,,,0.054,0.000
+2023-12-30 04:00:00,genRkje3,6-5 Wifi,Smart Plug,,,,6.984,0.007
+2023-12-30 04:00:00,mains,Total Usage,,,,,633.669,0.634
+2023-12-30 04:00:00,DzRXlfw9,1-2,Smart Plug,,,,8.039,0.008
+2023-12-30 04:00:00,always_on,Always On,Always On,,,,272.000,0.272
+2023-12-30 04:00:00,yKe4nWHQ,1-5 - Host 1,Smart Plug,,,,13.201,0.013
+2023-12-30 04:00:00,06auzWgQ,Backyard,Smart Plug,,,,1.230,0.001
+2023-12-30 04:00:00,456301vf,BackYard,Smart Plug,,,,0.346,0.000
+2023-12-30 04:00:00,RrIafJpu,Radon Fan,Smart Plug,,,,59.000,0.059
+2023-12-30 04:00:00,6SjiiZ6h,HVAC Main,AC,,,,24.541,0.025
+2023-12-30 04:00:00,RYQK85Ha,HVAC Upstairs,AC,,,,43.945,0.044
+2023-12-30 05:00:00,ssi-a4b19bd,Night Fan,Smart Plug,,,,30.000,0.030
+2023-12-30 05:00:00,WMBobdaQ,Robo Vacuum,Smart Plug,,,,3.000,0.003
+2023-12-30 05:00:00,UsT4jYTY,"Hot water ",Smart Plug,,,,3.155,0.003
+2023-12-30 05:00:00,2MWspPfA,basementlivingroom,Smart Plug,,,,18.177,0.018
+2023-12-30 05:00:00,T5QgvHdg,1-6 - Hub,Smart Plug,,,,1.179,0.001
+2023-12-30 05:00:00,g33Phtuz,Fridge,Smart Plug,,,,53.282,0.053
+2023-12-30 05:00:00,tTMgrLYY,"2-3 UV ",Smart Plug,,,,42.857,0.043
+2023-12-30 05:00:00,0xuqZnaG,2-2 sub pump,Smart Plug,,,,0.553,0.001
+2023-12-30 05:00:00,ssi-55115a66,Dreame Vacuum,Smart Plug,,,,4.503,0.005
+2023-12-30 05:00:00,DnC2WeoP,Washer,Smart Plug,,,,0.005,0.000
+2023-12-30 05:00:00,FJAoFYmy,1-3 - Host 2,Smart Plug,,,,0.090,0.000
+2023-12-30 05:00:00,genRkje3,6-5 Wifi,Smart Plug,,,,7.005,0.007
+2023-12-30 05:00:00,mains,Total Usage,,,,,667.755,0.668
+2023-12-30 05:00:00,DzRXlfw9,1-2,Smart Plug,,,,45.102,0.045
+2023-12-30 05:00:00,always_on,Always On,Always On,,,,272.000,0.272
+2023-12-30 05:00:00,e4b9b934,Pump 3,Pump,,,,0.776,0.001
+2023-12-30 05:00:00,yKe4nWHQ,1-5 - Host 1,Smart Plug,,,,13.284,0.013
+2023-12-30 05:00:00,06auzWgQ,Backyard,Smart Plug,,,,1.505,0.002
+2023-12-30 05:00:00,456301vf,BackYard,Smart Plug,,,,0.343,0.000
+2023-12-30 05:00:00,RrIafJpu,Radon Fan,Smart Plug,,,,59.000,0.059
+2023-12-30 05:00:00,6SjiiZ6h,HVAC Main,AC,,,,109.170,0.109
+2023-12-30 05:00:00,RYQK85Ha,HVAC Upstairs,AC,,,,66.323,0.066
+2023-12-30 06:00:00,ssi-a4b19bd,Night Fan,Smart Plug,,,,30.000,0.030
+2023-12-30 06:00:00,WMBobdaQ,Robo Vacuum,Smart Plug,,,,3.000,0.003
+2023-12-30 06:00:00,UsT4jYTY,"Hot water ",Smart Plug,,,,3.576,0.004
+2023-12-30 06:00:00,NUa8XR79,"Mini Fridge ",Smart Plug,,,,43.994,0.044
+2023-12-30 06:00:00,T5QgvHdg,1-6 - Hub,Smart Plug,,,,1.178,0.001
+2023-12-30 06:00:00,g33Phtuz,Fridge,Smart Plug,,,,60.071,0.060
+2023-12-30 06:00:00,ssi-83f71057,Switch LEDs,Smart Plug,,,,34.951,0.035
+2023-12-30 06:00:00,tTMgrLYY,"2-3 UV ",Smart Plug,,,,41.823,0.042
+2023-12-30 06:00:00,0xuqZnaG,2-2 sub pump,Smart Plug,,,,0.496,0.000
+2023-12-30 06:00:00,ssi-55115a66,Dreame Vacuum,Smart Plug,,,,3.000,0.003
+2023-12-30 06:00:00,DnC2WeoP,Washer,Smart Plug,,,,0.017,0.000
+2023-12-30 06:00:00,FJAoFYmy,1-3 - Host 2,Smart Plug,,,,0.097,0.000
+2023-12-30 06:00:00,genRkje3,6-5 Wifi,Smart Plug,,,,6.994,0.007
+2023-12-30 06:00:00,mains,Total Usage,,,,,699.320,0.699
+2023-12-30 06:00:00,DzRXlfw9,1-2,Smart Plug,,,,40.443,0.040
+2023-12-30 06:00:00,always_on,Always On,Always On,,,,272.000,0.272
+2023-12-30 06:00:00,e4b9b934,Pump 3,Pump,,,,1.155,0.001
+2023-12-30 06:00:00,yKe4nWHQ,1-5 - Host 1,Smart Plug,,,,13.323,0.013
+2023-12-30 06:00:00,RrIafJpu,Radon Fan,Smart Plug,,,,59.000,0.059
+2023-12-30 06:00:00,6SjiiZ6h,HVAC Main,AC,,,,133.712,0.134
+2023-12-30 06:00:00,RYQK85Ha,HVAC Upstairs,AC,,,,44.976,0.045
+2023-12-30 07:00:00,ssi-a4b19bd,Night Fan,Smart Plug,,,,30.000,0.030
+2023-12-30 07:00:00,WMBobdaQ,Robo Vacuum,Smart Plug,,,,3.000,0.003
+2023-12-30 07:00:00,70e9128c,Coffee Maker,Coffee Maker,,,,179.025,0.179
+2023-12-30 07:00:00,UsT4jYTY,"Hot water ",Smart Plug,,,,2.388,0.002
+2023-12-30 07:00:00,hiqvdUXO,Main Kitchen,Smart Plug,,,,26.125,0.026
+2023-12-30 07:00:00,NUa8XR79,"Mini Fridge ",Smart Plug,,,,15.333,0.015
+2023-12-30 07:00:00,T5QgvHdg,1-6 - Hub,Smart Plug,,,,1.173,0.001
+2023-12-30 07:00:00,g33Phtuz,Fridge,Smart Plug,,,,68.338,0.068
+2023-12-30 07:00:00,ssi-83f71057,Switch LEDs,Smart Plug,,,,35.000,0.035
+2023-12-30 07:00:00,tTMgrLYY,"2-3 UV ",Smart Plug,,,,42.466,0.042
+2023-12-30 07:00:00,0xuqZnaG,2-2 sub pump,Smart Plug,,,,0.619,0.001
+2023-12-30 07:00:00,ssi-55115a66,Dreame Vacuum,Smart Plug,,,,3.000,0.003
+2023-12-30 07:00:00,DnC2WeoP,Washer,Smart Plug,,,,0.005,0.000
+2023-12-30 07:00:00,1499ddba,Well pump,Pump,,,"Basement ",20.361,0.020
+2023-12-30 07:00:00,FJAoFYmy,1-3 - Host 2,Smart Plug,,,,0.095,0.000
+2023-12-30 07:00:00,genRkje3,6-5 Wifi,Smart Plug,,,,6.976,0.007
+2023-12-30 07:00:00,mains,Total Usage,,,,,717.477,0.717
+2023-12-30 07:00:00,DzRXlfw9,1-2,Smart Plug,,,,8.099,0.008
+2023-12-30 07:00:00,always_on,Always On,Always On,,,,272.000,0.272
+2023-12-30 07:00:00,yKe4nWHQ,1-5 - Host 1,Smart Plug,,,,13.360,0.013
+2023-12-30 07:00:00,456301vf,BackYard,Smart Plug,,,,0.243,0.000
+2023-12-30 07:00:00,RrIafJpu,Radon Fan,Smart Plug,,,,59.000,0.059
+2023-12-30 07:00:00,RYQK85Ha,HVAC Upstairs,AC,,,,61.538,0.062
+2023-12-30 08:00:00,70e9128c,Coffee Maker,Coffee Maker,,,,64.370,0.064
+2023-12-30 08:00:00,UsT4jYTY,"Hot water ",Smart Plug,,,,3.442,0.003
+2023-12-30 08:00:00,NUa8XR79,"Mini Fridge ",Smart Plug,,,,23.704,0.024
+2023-12-30 08:00:00,T5QgvHdg,1-6 - Hub,Smart Plug,,,,1.375,0.001
+2023-12-30 08:00:00,g33Phtuz,Fridge,Smart Plug,,,,70.642,0.071
+2023-12-30 08:00:00,tTMgrLYY,"2-3 UV ",Smart Plug,,,,43.015,0.043
+2023-12-30 08:00:00,0xuqZnaG,2-2 sub pump,Smart Plug,,,,0.586,0.001
+2023-12-30 08:00:00,BYAGpdS2,Garage,Smart Plug,,,,1.333,0.001
+2023-12-30 08:00:00,DnC2WeoP,Washer,Smart Plug,,,,0.015,0.000
+2023-12-30 08:00:00,7pUZFnuY,4-5 - Stereo,Smart Plug,,,,28.589,0.029
+2023-12-30 08:00:00,FJAoFYmy,1-3 - Host 2,Smart Plug,,,,0.137,0.000
+2023-12-30 08:00:00,genRkje3,6-5 Wifi,Smart Plug,,,,7.040,0.007
+2023-12-30 08:00:00,GzdITuA3,Side Garage,Smart Plug,,,,0.991,0.001
+2023-12-30 08:00:00,DzRXlfw9,1-2,Smart Plug,,,,50.342,0.050
+2023-12-30 08:00:00,IPwJmgEW,LG TV,Smart Plug,,,,27.222,0.027
+2023-12-30 08:00:00,always_on,Always On,Always On,,,,272.000,0.272
+2023-12-30 08:00:00,e4b9b934,Pump 3,Pump,,,,1.182,0.001
+2023-12-30 08:00:00,yKe4nWHQ,1-5 - Host 1,Smart Plug,,,,13.444,0.013
+2023-12-30 08:00:00,TpW50HtL,Bathroom 1,Smart Plug,,,,51.061,0.051
+2023-12-30 08:00:00,ssi-a4b19bd,Night Fan,Smart Plug,,,,5.629,0.006
+2023-12-30 08:00:00,WMBobdaQ,Robo Vacuum,Smart Plug,,,,3.000,0.003
+2023-12-30 08:00:00,hiqvdUXO,Main Kitchen,Smart Plug,,,,3.426,0.003
+2023-12-30 08:00:00,z4VH33On,"4-2 - Bass Speaker ",Smart Plug,,,,5.717,0.006
+2023-12-30 08:00:00,ssi-83f71057,Switch LEDs,Smart Plug,,,,35.000,0.035
+2023-12-30 08:00:00,747b19bf,Garage door,Garage Door,,,"Basement ",2.188,0.002
+2023-12-30 08:00:00,e27809d2,Water dispenser,Other Appliance,,,,0.048,0.000
+2023-12-30 08:00:00,ssi-55115a66,Dreame Vacuum,Smart Plug,,,,3.000,0.003
+2023-12-30 08:00:00,mains,Total Usage,,,,,1233.611,1.234
+2023-12-30 08:00:00,RrIafJpu,Radon Fan,Smart Plug,,,,59.000,0.059
+2023-12-30 08:00:00,6SjiiZ6h,HVAC Main,AC,,,,197.916,0.198
+2023-12-30 08:00:00,ut0E5XU0,Upstairs_Plug,Toaster,,,,204.161,0.204
+2023-12-30 08:00:00,RYQK85Ha,HVAC Upstairs,AC,,,,70.960,0.071
+2023-12-30 09:00:00,70e9128c,Coffee Maker,Coffee Maker,,,,59.203,0.059
+2023-12-30 09:00:00,UsT4jYTY,"Hot water ",Smart Plug,,,,3.970,0.004
+2023-12-30 09:00:00,ssi-68d5ac08,hvac,Smart Plug,,,,0.083,0.000
+2023-12-30 09:00:00,NUa8XR79,"Mini Fridge ",Smart Plug,,,,12.566,0.013
+2023-12-30 09:00:00,T5QgvHdg,1-6 - Hub,Smart Plug,,,,1.528,0.002
+2023-12-30 09:00:00,g33Phtuz,Fridge,Smart Plug,,,,73.215,0.073
+2023-12-30 09:00:00,tTMgrLYY,"2-3 UV ",Smart Plug,,,,43.198,0.043
+2023-12-30 09:00:00,0xuqZnaG,2-2 sub pump,Smart Plug,,,,0.626,0.001
+2023-12-30 09:00:00,BYAGpdS2,Garage,Smart Plug,,,,2.433,0.002
+2023-12-30 09:00:00,7pUZFnuY,4-5 - Stereo,Smart Plug,,,,43.728,0.044
+2023-12-30 09:00:00,FJAoFYmy,1-3 - Host 2,Smart Plug,,,,0.105,0.000
+2023-12-30 09:00:00,genRkje3,6-5 Wifi,Smart Plug,,,,7.095,0.007
+2023-12-30 09:00:00,GzdITuA3,Side Garage,Smart Plug,,,,1.161,0.001
+2023-12-30 09:00:00,DzRXlfw9,1-2,Smart Plug,,,,35.552,0.036
+2023-12-30 09:00:00,IPwJmgEW,LG TV,Smart Plug,,,,156.481,0.156
+2023-12-30 09:00:00,always_on,Always On,Always On,,,,272.000,0.272
+2023-12-30 09:00:00,e4b9b934,Pump 3,Pump,,,,1.959,0.002
+2023-12-30 09:00:00,yKe4nWHQ,1-5 - Host 1,Smart Plug,,,,13.681,0.014
+2023-12-30 09:00:00,apeiuhC7,Bathroom_3,Smart Plug,,,,2.600,0.003
+2023-12-30 09:00:00,Fq71rgOc,Enterntainment,Smart Plug,,,,0.276,0.000
+2023-12-30 09:00:00,ssi-520abe92,basementhallway,Smart Plug,,,,4.422,0.004
+2023-12-30 09:00:00,WMBobdaQ,Robo Vacuum,Smart Plug,,,,3.000,0.003
+2023-12-30 09:00:00,z4VH33On,"4-2 - Bass Speaker ",Smart Plug,,,,8.552,0.009
+2023-12-30 09:00:00,2MWspPfA,basementlivingroom,Smart Plug,,,,6.066,0.006
+2023-12-30 09:00:00,ssi-83f71057,Switch LEDs,Smart Plug,,,,35.000,0.035
+2023-12-30 09:00:00,747b19bf,Garage door,Garage Door,,,"Basement ",2.346,0.002
+2023-12-30 09:00:00,ssi-55115a66,Dreame Vacuum,Smart Plug,,,,3.000,0.003
+2023-12-30 09:00:00,1499ddba,Well pump,Pump,,,"Basement ",21.115,0.021
+2023-12-30 09:00:00,mains,Total Usage,,,,,1498.527,1.499
+2023-12-30 09:00:00,ssi-ac2fa4f5,Bathroom Fan,Smart Plug,,,,2.629,0.003
+2023-12-30 09:00:00,RrIafJpu,Radon Fan,Smart Plug,,,,59.000,0.059
+2023-12-30 09:00:00,6SjiiZ6h,HVAC Main,AC,,,,276.212,0.276
+2023-12-30 09:00:00,ut0E5XU0,Upstairs_Plug,Toaster,,,,306.655,0.307
+2023-12-30 10:00:00,B5enaECM,Master,Smart Plug,,,,0.120,0.000
+2023-12-30 10:00:00,UsT4jYTY,"Hot water ",Smart Plug,,,,3.582,0.004
+2023-12-30 10:00:00,NUa8XR79,"Mini Fridge ",Smart Plug,,,,12.343,0.012
+2023-12-30 10:00:00,T5QgvHdg,1-6 - Hub,Smart Plug,,,,1.470,0.001
+2023-12-30 10:00:00,g33Phtuz,Fridge,Smart Plug,,,,72.474,0.072
+2023-12-30 10:00:00,tTMgrLYY,"2-3 UV ",Smart Plug,,,,43.613,0.044
+2023-12-30 10:00:00,0xuqZnaG,2-2 sub pump,Smart Plug,,,,0.543,0.001
+2023-12-30 10:00:00,BYAGpdS2,Garage,Smart Plug,,,,1.727,0.002
+2023-12-30 10:00:00,DnC2WeoP,Washer,Smart Plug,,,,0.005,0.000
+2023-12-30 10:00:00,9b3682d3,Microwave,Microwave,,,,2.254,0.002
+2023-12-30 10:00:00,7pUZFnuY,4-5 - Stereo,Smart Plug,,,,9.824,0.010
+2023-12-30 10:00:00,B46U8aYU,Front Room,Smart Plug,,,,32.724,0.033
+2023-12-30 10:00:00,FJAoFYmy,1-3 - Host 2,Smart Plug,,,,0.134,0.000
+2023-12-30 10:00:00,genRkje3,6-5 Wifi,Smart Plug,,,,7.098,0.007
+2023-12-30 10:00:00,GzdITuA3,Side Garage,Smart Plug,,,,2.342,0.002
+2023-12-30 10:00:00,DzRXlfw9,1-2,Smart Plug,,,,8.231,0.008
+2023-12-30 10:00:00,IPwJmgEW,LG TV,Smart Plug,,,,59.846,0.060
+2023-12-30 10:00:00,always_on,Always On,Always On,,,,272.000,0.272
+2023-12-30 10:00:00,e4b9b934,Pump 3,Pump,,,,1.156,0.001
+2023-12-30 10:00:00,yKe4nWHQ,1-5 - Host 1,Smart Plug,,,,13.544,0.014
+2023-12-30 10:00:00,Fq71rgOc,Enterntainment,Smart Plug,,,,8.890,0.009
+2023-12-30 10:00:00,ssi-520abe92,basementhallway,Smart Plug,,,,142.355,0.142
+2023-12-30 10:00:00,NMN6F9b4,Hallway,Smart Plug,,,,0.975,0.001
+2023-12-30 10:00:00,413aeab9,Light 2,Light,,,,1.253,0.001
+2023-12-30 10:00:00,WMBobdaQ,Robo Vacuum,Smart Plug,,,,3.000,0.003
+2023-12-30 10:00:00,z4VH33On,"4-2 - Bass Speaker ",Smart Plug,,,,1.909,0.002
+2023-12-30 10:00:00,2MWspPfA,basementlivingroom,Smart Plug,,,,142.266,0.142
+2023-12-30 10:00:00,6bUeX3OE,Master Closet,Smart Plug,,,,0.042,0.000
+2023-12-30 10:00:00,ssi-83f71057,Switch LEDs,Smart Plug,,,,35.000,0.035
+2023-12-30 10:00:00,EzRcwH5m,Jakes Room,Smart Plug,,,,50.095,0.050
+2023-12-30 10:00:00,e27809d2,Water dispenser,Other Appliance,,,,0.033,0.000
+2023-12-30 10:00:00,0f0dd503,Pump 2,Pump,,,,1.992,0.002
+2023-12-30 10:00:00,ssi-55115a66,Dreame Vacuum,Smart Plug,,,,3.000,0.003
+2023-12-30 10:00:00,1499ddba,Well pump,Pump,,,"Basement ",19.533,0.020
+2023-12-30 10:00:00,mains,Total Usage,,,,,1260.560,1.261
+2023-12-30 10:00:00,ssi-ac2fa4f5,Bathroom Fan,Smart Plug,,,,2.995,0.003
+2023-12-30 10:00:00,RrIafJpu,Radon Fan,Smart Plug,,,,59.000,0.059
+2023-12-30 10:00:00,6SjiiZ6h,HVAC Main,AC,,,,143.133,0.143
+2023-12-30 10:00:00,ut0E5XU0,Upstairs_Plug,Toaster,,,,73.392,0.073
+2023-12-30 11:00:00,H6qTQUtY,frontdoorlight,Smart Plug,,,,0.769,0.001
+2023-12-30 11:00:00,UsT4jYTY,"Hot water ",Smart Plug,,,,3.546,0.004
+2023-12-30 11:00:00,NUa8XR79,"Mini Fridge ",Smart Plug,,,,12.377,0.012
+2023-12-30 11:00:00,T5QgvHdg,1-6 - Hub,Smart Plug,,,,1.406,0.001
+2023-12-30 11:00:00,g33Phtuz,Fridge,Smart Plug,,,,52.436,0.052
+2023-12-30 11:00:00,tTMgrLYY,"2-3 UV ",Smart Plug,,,,42.873,0.043
+2023-12-30 11:00:00,0xuqZnaG,2-2 sub pump,Smart Plug,,,,0.609,0.001
+2023-12-30 11:00:00,BYAGpdS2,Garage,Smart Plug,,,,2.671,0.003
+2023-12-30 11:00:00,DnC2WeoP,Washer,Smart Plug,,,,0.005,0.000
+2023-12-30 11:00:00,7pUZFnuY,4-5 - Stereo,Smart Plug,,,,20.092,0.020
+2023-12-30 11:00:00,B46U8aYU,Front Room,Smart Plug,,,,3.081,0.003
+2023-12-30 11:00:00,FJAoFYmy,1-3 - Host 2,Smart Plug,,,,0.090,0.000
+2023-12-30 11:00:00,genRkje3,6-5 Wifi,Smart Plug,,,,7.099,0.007
+2023-12-30 11:00:00,GzdITuA3,Side Garage,Smart Plug,,,,2.780,0.003
+2023-12-30 11:00:00,DzRXlfw9,1-2,Smart Plug,,,,59.905,0.060
+2023-12-30 11:00:00,IPwJmgEW,LG TV,Smart Plug,,,,1.377,0.001
+2023-12-30 11:00:00,always_on,Always On,Always On,,,,272.000,0.272
+2023-12-30 11:00:00,e4b9b934,Pump 3,Pump,,,,1.174,0.001
+2023-12-30 11:00:00,yKe4nWHQ,1-5 - Host 1,Smart Plug,,,,13.657,0.014
+2023-12-30 11:00:00,Fq71rgOc,Enterntainment,Smart Plug,,,,1.141,0.001
+2023-12-30 11:00:00,ssi-520abe92,basementhallway,Smart Plug,,,,25.710,0.026
+2023-12-30 11:00:00,WMBobdaQ,Robo Vacuum,Smart Plug,,,,2.990,0.003
+2023-12-30 11:00:00,z4VH33On,"4-2 - Bass Speaker ",Smart Plug,,,,3.937,0.004
+2023-12-30 11:00:00,2MWspPfA,basementlivingroom,Smart Plug,,,,18.532,0.019
+2023-12-30 11:00:00,KqnnB036,Storage,Smart Plug,,,,0.766,0.001
+2023-12-30 11:00:00,ssi-83f71057,Switch LEDs,Smart Plug,,,,34.902,0.035
+2023-12-30 11:00:00,747b19bf,Garage door,Garage Door,,,"Basement ",3.441,0.003
+2023-12-30 11:00:00,EzRcwH5m,Jakes Room,Smart Plug,,,,2.604,0.003
+2023-12-30 11:00:00,ssi-55115a66,Dreame Vacuum,Smart Plug,,,,2.990,0.003
+2023-12-30 11:00:00,1499ddba,Well pump,Pump,,,"Basement ",20.127,0.020
+2023-12-30 11:00:00,mains,Total Usage,,,,,1026.695,1.027
+2023-12-30 11:00:00,RrIafJpu,Radon Fan,Smart Plug,,,,58.803,0.059
+2023-12-30 11:00:00,6SjiiZ6h,HVAC Main,AC,,,,145.508,0.146
+2023-12-30 11:00:00,ut0E5XU0,Upstairs_Plug,Toaster,,,,142.894,0.143
+2023-12-30 11:00:00,RYQK85Ha,HVAC Upstairs,AC,,,,68.679,0.069
+2023-12-30 12:00:00,UsT4jYTY,"Hot water ",Smart Plug,,,,3.986,0.004
+2023-12-30 12:00:00,NUa8XR79,"Mini Fridge ",Smart Plug,,,,14.304,0.014
+2023-12-30 12:00:00,T5QgvHdg,1-6 - Hub,Smart Plug,,,,1.486,0.001
+2023-12-30 12:00:00,g33Phtuz,Fridge,Smart Plug,,,,54.952,0.055
+2023-12-30 12:00:00,tTMgrLYY,"2-3 UV ",Smart Plug,,,,42.569,0.043
+2023-12-30 12:00:00,0xuqZnaG,2-2 sub pump,Smart Plug,,,,0.441,0.000
+2023-12-30 12:00:00,BYAGpdS2,Garage,Smart Plug,,,,2.238,0.002
+2023-12-30 12:00:00,7pUZFnuY,4-5 - Stereo,Smart Plug,,,,44.133,0.044
+2023-12-30 12:00:00,FJAoFYmy,1-3 - Host 2,Smart Plug,,,,0.099,0.000
+2023-12-30 12:00:00,genRkje3,6-5 Wifi,Smart Plug,,,,7.047,0.007
+2023-12-30 12:00:00,GzdITuA3,Side Garage,Smart Plug,,,,2.328,0.002
+2023-12-30 12:00:00,DzRXlfw9,1-2,Smart Plug,,,,26.393,0.026
+2023-12-30 12:00:00,IPwJmgEW,LG TV,Smart Plug,,,,68.545,0.069
+2023-12-30 12:00:00,always_on,Always On,Always On,,,,272.000,0.272
+2023-12-30 12:00:00,e4b9b934,Pump 3,Pump,,,,1.164,0.001
+2023-12-30 12:00:00,yKe4nWHQ,1-5 - Host 1,Smart Plug,,,,13.669,0.014
+2023-12-30 12:00:00,WMBobdaQ,Robo Vacuum,Smart Plug,,,,3.000,0.003
+2023-12-30 12:00:00,z4VH33On,"4-2 - Bass Speaker ",Smart Plug,,,,8.465,0.008
+2023-12-30 12:00:00,ssi-83f71057,Switch LEDs,Smart Plug,,,,35.000,0.035
+2023-12-30 12:00:00,747b19bf,Garage door,Garage Door,,,"Basement ",2.339,0.002
+2023-12-30 12:00:00,ssi-55115a66,Dreame Vacuum,Smart Plug,,,,3.000,0.003
+2023-12-30 12:00:00,mains,Total Usage,,,,,1209.883,1.210
+2023-12-30 12:00:00,RrIafJpu,Radon Fan,Smart Plug,,,,59.000,0.059
+2023-12-30 12:00:00,6SjiiZ6h,HVAC Main,AC,,,,223.170,0.223
+2023-12-30 12:00:00,ut0E5XU0,Upstairs_Plug,Toaster,,,,315.535,0.316
+2023-12-30 13:00:00,H6qTQUtY,frontdoorlight,Smart Plug,,,,0.453,0.000
+2023-12-30 13:00:00,UsT4jYTY,"Hot water ",Smart Plug,,,,3.182,0.003
+2023-12-30 13:00:00,ssi-68d5ac08,hvac,Smart Plug,,,,0.283,0.000
+2023-12-30 13:00:00,NUa8XR79,"Mini Fridge ",Smart Plug,,,,12.465,0.012
+2023-12-30 13:00:00,T5QgvHdg,1-6 - Hub,Smart Plug,,,,1.525,0.002
+2023-12-30 13:00:00,g33Phtuz,Fridge,Smart Plug,,,,61.189,0.061
+2023-12-30 13:00:00,jXf1rXPK,OptiMist,Smart Plug,,,,0.005,0.000
+2023-12-30 13:00:00,tTMgrLYY,"2-3 UV ",Smart Plug,,,,43.289,0.043
+2023-12-30 13:00:00,0xuqZnaG,2-2 sub pump,Smart Plug,,,,0.556,0.001
+2023-12-30 13:00:00,BYAGpdS2,Garage,Smart Plug,,,,1.355,0.001
+2023-12-30 13:00:00,DnC2WeoP,Washer,Smart Plug,,,,0.005,0.000
+2023-12-30 13:00:00,7pUZFnuY,4-5 - Stereo,Smart Plug,,,,44.662,0.045
+2023-12-30 13:00:00,FJAoFYmy,1-3 - Host 2,Smart Plug,,,,0.091,0.000
+2023-12-30 13:00:00,genRkje3,6-5 Wifi,Smart Plug,,,,7.102,0.007
+2023-12-30 13:00:00,DzRXlfw9,1-2,Smart Plug,,,,10.411,0.010
+2023-12-30 13:00:00,IPwJmgEW,LG TV,Smart Plug,,,,62.423,0.062
+2023-12-30 13:00:00,always_on,Always On,Always On,,,,272.000,0.272
+2023-12-30 13:00:00,e4b9b934,Pump 3,Pump,,,,0.776,0.001
+2023-12-30 13:00:00,yKe4nWHQ,1-5 - Host 1,Smart Plug,,,,13.469,0.013
+2023-12-30 13:00:00,ssi-520abe92,basementhallway,Smart Plug,,,,3.622,0.004
+2023-12-30 13:00:00,dEwJddMP,Well,Smart Plug,,,,1.002,0.001
+2023-12-30 13:00:00,WMBobdaQ,Robo Vacuum,Smart Plug,,,,3.000,0.003
+2023-12-30 13:00:00,z4VH33On,"4-2 - Bass Speaker ",Smart Plug,,,,8.601,0.009
+2023-12-30 13:00:00,rJonGsY7,Laundry,Smart Plug,,,,11.591,0.012
+2023-12-30 13:00:00,KqnnB036,Storage,Smart Plug,,,,0.916,0.001
+2023-12-30 13:00:00,ssi-83f71057,Switch LEDs,Smart Plug,,,,35.000,0.035
+2023-12-30 13:00:00,ssi-55115a66,Dreame Vacuum,Smart Plug,,,,3.000,0.003
+2023-12-30 13:00:00,1499ddba,Well pump,Pump,,,"Basement ",20.345,0.020
+2023-12-30 13:00:00,mains,Total Usage,,,,,1156.681,1.157
+2023-12-30 13:00:00,ssi-ac2fa4f5,Bathroom Fan,Smart Plug,,,,3.012,0.003
+2023-12-30 13:00:00,RrIafJpu,Radon Fan,Smart Plug,,,,59.000,0.059
+2023-12-30 13:00:00,6SjiiZ6h,HVAC Main,AC,,,,138.145,0.138
+2023-12-30 13:00:00,ec7uWGrx,Dryer,Dryer,,,,7.253,0.007
+2023-12-30 13:00:00,ut0E5XU0,Upstairs_Plug,Toaster,,,,314.822,0.315
+2023-12-30 13:00:00,RYQK85Ha,HVAC Upstairs,AC,,,,57.269,0.057
+2023-12-30 14:00:00,H6qTQUtY,frontdoorlight,Smart Plug,,,,0.710,0.001
+2023-12-30 14:00:00,UsT4jYTY,"Hot water ",Smart Plug,,,,3.568,0.004
+2023-12-30 14:00:00,ssi-68d5ac08,hvac,Smart Plug,,,,1.500,0.002
+2023-12-30 14:00:00,NUa8XR79,"Mini Fridge ",Smart Plug,,,,12.685,0.013
+2023-12-30 14:00:00,T5QgvHdg,1-6 - Hub,Smart Plug,,,,1.478,0.001
+2023-12-30 14:00:00,g33Phtuz,Fridge,Smart Plug,,,,74.587,0.075
+2023-12-30 14:00:00,tTMgrLYY,"2-3 UV ",Smart Plug,,,,43.107,0.043
+2023-12-30 14:00:00,0xuqZnaG,2-2 sub pump,Smart Plug,,,,0.566,0.001
+2023-12-30 14:00:00,BYAGpdS2,Garage,Smart Plug,,,,1.344,0.001
+2023-12-30 14:00:00,DnC2WeoP,Washer,Smart Plug,,,,0.003,0.000
+2023-12-30 14:00:00,7pUZFnuY,4-5 - Stereo,Smart Plug,,,,15.571,0.016
+2023-12-30 14:00:00,FJAoFYmy,1-3 - Host 2,Smart Plug,,,,0.109,0.000
+2023-12-30 14:00:00,genRkje3,6-5 Wifi,Smart Plug,,,,7.051,0.007
+2023-12-30 14:00:00,DzRXlfw9,1-2,Smart Plug,,,,66.464,0.066
+2023-12-30 14:00:00,IPwJmgEW,LG TV,Smart Plug,,,,4.028,0.004
+2023-12-30 14:00:00,always_on,Always On,Always On,,,,272.000,0.272
+2023-12-30 14:00:00,e4b9b934,Pump 3,Pump,,,,0.776,0.001
+2023-12-30 14:00:00,yKe4nWHQ,1-5 - Host 1,Smart Plug,,,,13.278,0.013
+2023-12-30 14:00:00,Fq71rgOc,Enterntainment,Smart Plug,,,,0.365,0.000
+2023-12-30 14:00:00,ssi-520abe92,basementhallway,Smart Plug,,,,109.133,0.109
+2023-12-30 14:00:00,TpW50HtL,Bathroom 1,Smart Plug,,,,21.522,0.022
+2023-12-30 14:00:00,WMBobdaQ,Robo Vacuum,Smart Plug,,,,2.989,0.003
+2023-12-30 14:00:00,XxVJyEzs,Kitchen Basement,Smart Plug,,,,16.677,0.017
+2023-12-30 14:00:00,z4VH33On,"4-2 - Bass Speaker ",Smart Plug,,,,2.967,0.003
+2023-12-30 14:00:00,2MWspPfA,basementlivingroom,Smart Plug,,,,7.199,0.007
+2023-12-30 14:00:00,rJonGsY7,Laundry,Smart Plug,,,,1.366,0.001
+2023-12-30 14:00:00,KqnnB036,Storage,Smart Plug,,,,0.974,0.001
+2023-12-30 14:00:00,ssi-83f71057,Switch LEDs,Smart Plug,,,,35.000,0.035
+2023-12-30 14:00:00,ssi-55115a66,Dreame Vacuum,Smart Plug,,,,3.000,0.003
+2023-12-30 14:00:00,1499ddba,Well pump,Pump,,,"Basement ",21.621,0.022
+2023-12-30 14:00:00,mains,Total Usage,,,,,1316.967,1.317
+2023-12-30 14:00:00,RrIafJpu,Radon Fan,Smart Plug,,,,59.000,0.059
+2023-12-30 14:00:00,6SjiiZ6h,HVAC Main,AC,,,,162.212,0.162
+2023-12-30 14:00:00,ec7uWGrx,Dryer,Dryer,,,,240.139,0.240
+2023-12-30 14:00:00,ut0E5XU0,Upstairs_Plug,Toaster,,,,112.505,0.113
+2023-12-30 14:00:00,RYQK85Ha,HVAC Upstairs,AC,,,,44.166,0.044
+2023-12-30 15:00:00,H6qTQUtY,frontdoorlight,Smart Plug,,,,0.532,0.001
+2023-12-30 15:00:00,UsT4jYTY,"Hot water ",Smart Plug,,,,3.520,0.004
+2023-12-30 15:00:00,NUa8XR79,"Mini Fridge ",Smart Plug,,,,12.486,0.012
+2023-12-30 15:00:00,T5QgvHdg,1-6 - Hub,Smart Plug,,,,1.446,0.001
+2023-12-30 15:00:00,g33Phtuz,Fridge,Smart Plug,,,,74.440,0.074
+2023-12-30 15:00:00,tTMgrLYY,"2-3 UV ",Smart Plug,,,,42.758,0.043
+2023-12-30 15:00:00,0xuqZnaG,2-2 sub pump,Smart Plug,,,,0.524,0.001
+2023-12-30 15:00:00,Qpx8btwV,MasterBedroom Plug,Smart Plug,,,,50.139,0.050
+2023-12-30 15:00:00,DnC2WeoP,Washer,Smart Plug,,,,0.033,0.000
+2023-12-30 15:00:00,FJAoFYmy,1-3 - Host 2,Smart Plug,,,,0.180,0.000
+2023-12-30 15:00:00,genRkje3,6-5 Wifi,Smart Plug,,,,7.185,0.007
+2023-12-30 15:00:00,DzRXlfw9,1-2,Smart Plug,,,,22.493,0.022
+2023-12-30 15:00:00,IPwJmgEW,LG TV,Smart Plug,,,,45.972,0.046
+2023-12-30 15:00:00,always_on,Always On,Always On,,,,272.000,0.272
+2023-12-30 15:00:00,e4b9b934,Pump 3,Pump,,,,1.173,0.001
+2023-12-30 15:00:00,yKe4nWHQ,1-5 - Host 1,Smart Plug,,,,13.199,0.013
+2023-12-30 15:00:00,ssi-520abe92,basementhallway,Smart Plug,,,,160.000,0.160
+2023-12-30 15:00:00,TpW50HtL,Bathroom 1,Smart Plug,,,,78.397,0.078
+2023-12-30 15:00:00,WMBobdaQ,Robo Vacuum,Smart Plug,,,,2.908,0.003
+2023-12-30 15:00:00,XxVJyEzs,Kitchen Basement,Smart Plug,,,,20.000,0.020
+2023-12-30 15:00:00,ssi-83f71057,Switch LEDs,Smart Plug,,,,35.000,0.035
+2023-12-30 15:00:00,ssi-55115a66,Dreame Vacuum,Smart Plug,,,,3.000,0.003
+2023-12-30 15:00:00,mains,Total Usage,,,,,958.907,0.959
+2023-12-30 15:00:00,RrIafJpu,Radon Fan,Smart Plug,,,,59.000,0.059
+2023-12-30 15:00:00,6SjiiZ6h,HVAC Main,AC,,,,147.883,0.148
+2023-12-30 15:00:00,ec7uWGrx,Dryer,Dryer,,,,23.135,0.023
+2023-12-30 15:00:00,ut0E5XU0,Upstairs_Plug,Toaster,,,,2.927,0.003
+2023-12-30 16:00:00,B5enaECM,Master,Smart Plug,,,,0.100,0.000
+2023-12-30 16:00:00,UsT4jYTY,"Hot water ",Smart Plug,,,,3.568,0.004
+2023-12-30 16:00:00,ssi-68d5ac08,hvac,Smart Plug,,,,1.566,0.002
+2023-12-30 16:00:00,NUa8XR79,"Mini Fridge ",Smart Plug,,,,12.681,0.013
+2023-12-30 16:00:00,T5QgvHdg,1-6 - Hub,Smart Plug,,,,1.449,0.001
+2023-12-30 16:00:00,g33Phtuz,Fridge,Smart Plug,,,,87.594,0.088
+2023-12-30 16:00:00,tTMgrLYY,"2-3 UV ",Smart Plug,,,,42.656,0.043
+2023-12-30 16:00:00,0xuqZnaG,2-2 sub pump,Smart Plug,,,,0.719,0.001
+2023-12-30 16:00:00,BYAGpdS2,Garage,Smart Plug,,,,26.283,0.026
+2023-12-30 16:00:00,Qpx8btwV,MasterBedroom Plug,Smart Plug,,,,33.967,0.034
+2023-12-30 16:00:00,DnC2WeoP,Washer,Smart Plug,,,,0.020,0.000
+2023-12-30 16:00:00,FJAoFYmy,1-3 - Host 2,Smart Plug,,,,0.162,0.000
+2023-12-30 16:00:00,genRkje3,6-5 Wifi,Smart Plug,,,,7.177,0.007
+2023-12-30 16:00:00,GzdITuA3,Side Garage,Smart Plug,,,,2.274,0.002
+2023-12-30 16:00:00,DzRXlfw9,1-2,Smart Plug,,,,11.449,0.011
+2023-12-30 16:00:00,IPwJmgEW,LG TV,Smart Plug,,,,30.506,0.031
+2023-12-30 16:00:00,always_on,Always On,Always On,,,,272.000,0.272
+2023-12-30 16:00:00,e4b9b934,Pump 3,Pump,,,,1.164,0.001
+2023-12-30 16:00:00,yKe4nWHQ,1-5 - Host 1,Smart Plug,,,,13.568,0.014
+2023-12-30 16:00:00,06auzWgQ,Backyard,Smart Plug,,,,3.725,0.004
+2023-12-30 16:00:00,ssi-520abe92,basementhallway,Smart Plug,,,,160.000,0.160
+2023-12-30 16:00:00,WMBobdaQ,Robo Vacuum,Smart Plug,,,,2.862,0.003
+2023-12-30 16:00:00,XxVJyEzs,Kitchen Basement,Smart Plug,,,,20.000,0.020
+2023-12-30 16:00:00,2MWspPfA,basementlivingroom,Smart Plug,,,,1.577,0.002
+2023-12-30 16:00:00,6bUeX3OE,Master Closet,Smart Plug,,,,0.211,0.000
+2023-12-30 16:00:00,ssi-83f71057,Switch LEDs,Smart Plug,,,,35.000,0.035
+2023-12-30 16:00:00,747b19bf,Garage door,Garage Door,,,"Basement ",2.289,0.002
+2023-12-30 16:00:00,ssi-55115a66,Dreame Vacuum,Smart Plug,,,,3.000,0.003
+2023-12-30 16:00:00,1499ddba,Well pump,Pump,,,"Basement ",18.908,0.019
+2023-12-30 16:00:00,mains,Total Usage,,,,,970.527,0.971
+2023-12-30 16:00:00,RrIafJpu,Radon Fan,Smart Plug,,,,59.000,0.059
+2023-12-30 16:00:00,6SjiiZ6h,HVAC Main,AC,,,,180.500,0.181
+2023-12-30 16:00:00,ut0E5XU0,Upstairs_Plug,Toaster,,,,2.701,0.003
+2023-12-30 17:00:00,INfY3kYr,6-2 - Apple TV,Smart Plug,,,,1.801,0.002
+2023-12-30 17:00:00,H6qTQUtY,frontdoorlight,Smart Plug,,,,0.402,0.000
+2023-12-30 17:00:00,UsT4jYTY,"Hot water ",Smart Plug,,,,2.310,0.002
+2023-12-30 17:00:00,NUa8XR79,"Mini Fridge ",Smart Plug,,,,12.555,0.013
+2023-12-30 17:00:00,T5QgvHdg,1-6 - Hub,Smart Plug,,,,1.453,0.001
+2023-12-30 17:00:00,g33Phtuz,Fridge,Smart Plug,,,,193.498,0.193
+2023-12-30 17:00:00,gvpFPq7K,"6-1 - Samsung ",Smart Plug,,,,25.350,0.025
+2023-12-30 17:00:00,tTMgrLYY,"2-3 UV ",Smart Plug,,,,42.700,0.043
+2023-12-30 17:00:00,0xuqZnaG,2-2 sub pump,Smart Plug,,,,0.579,0.001
+2023-12-30 17:00:00,BYAGpdS2,Garage,Smart Plug,,,,0.683,0.001
+2023-12-30 17:00:00,9yUgkAEi,kidsroom,Smart Plug,,,,3.249,0.003
+2023-12-30 17:00:00,Qpx8btwV,MasterBedroom Plug,Smart Plug,,,,7.963,0.008
+2023-12-30 17:00:00,B46U8aYU,Front Room,Smart Plug,,,,47.576,0.048
+2023-12-30 17:00:00,FJAoFYmy,1-3 - Host 2,Smart Plug,,,,0.162,0.000
+2023-12-30 17:00:00,genRkje3,6-5 Wifi,Smart Plug,,,,7.393,0.007
+2023-12-30 17:00:00,DzRXlfw9,1-2,Smart Plug,,,,66.373,0.066
+2023-12-30 17:00:00,IPwJmgEW,LG TV,Smart Plug,,,,56.138,0.056
+2023-12-30 17:00:00,always_on,Always On,Always On,,,,272.000,0.272
+2023-12-30 17:00:00,yKe4nWHQ,1-5 - Host 1,Smart Plug,,,,13.618,0.014
+2023-12-30 17:00:00,06auzWgQ,Backyard,Smart Plug,,,,12.166,0.012
+2023-12-30 17:00:00,ssi-520abe92,basementhallway,Smart Plug,,,,160.000,0.160
+2023-12-30 17:00:00,WMBobdaQ,Robo Vacuum,Smart Plug,,,,3.000,0.003
+2023-12-30 17:00:00,XxVJyEzs,Kitchen Basement,Smart Plug,,,,20.000,0.020
+2023-12-30 17:00:00,2MWspPfA,basementlivingroom,Smart Plug,,,,1.555,0.002
+2023-12-30 17:00:00,6bUeX3OE,Master Closet,Smart Plug,,,,0.044,0.000
+2023-12-30 17:00:00,KqnnB036,Storage,Smart Plug,,,,0.948,0.001
+2023-12-30 17:00:00,ssi-83f71057,Switch LEDs,Smart Plug,,,,35.000,0.035
+2023-12-30 17:00:00,ssi-55115a66,Dreame Vacuum,Smart Plug,,,,3.000,0.003
+2023-12-30 17:00:00,jnEBHSam,Breakfast,Smart Plug,,,,7.197,0.007
+2023-12-30 17:00:00,mains,Total Usage,,,,,1153.705,1.154
+2023-12-30 17:00:00,ssi-ac2fa4f5,Bathroom Fan,Smart Plug,,,,0.795,0.001
+2023-12-30 17:00:00,FtqFkAJj,FrontYard,Smart Plug,,,,0.266,0.000
+2023-12-30 17:00:00,RrIafJpu,Radon Fan,Smart Plug,,,,59.000,0.059
+2023-12-30 17:00:00,ut0E5XU0,Upstairs_Plug,Toaster,,,,2.688,0.003
+2023-12-30 17:00:00,RYQK85Ha,HVAC Upstairs,AC,,,,168.201,0.168
+2023-12-30 18:00:00,INfY3kYr,6-2 - Apple TV,Smart Plug,,,,3.052,0.003
+2023-12-30 18:00:00,UsT4jYTY,"Hot water ",Smart Plug,,,,2.316,0.002
+2023-12-30 18:00:00,ssi-68d5ac08,hvac,Smart Plug,,,,0.154,0.000
+2023-12-30 18:00:00,NUa8XR79,"Mini Fridge ",Smart Plug,,,,12.091,0.012
+2023-12-30 18:00:00,T5QgvHdg,1-6 - Hub,Smart Plug,,,,1.491,0.001
+2023-12-30 18:00:00,g33Phtuz,Fridge,Smart Plug,,,,130.631,0.131
+2023-12-30 18:00:00,gvpFPq7K,"6-1 - Samsung ",Smart Plug,,,,76.769,0.077
+2023-12-30 18:00:00,tTMgrLYY,"2-3 UV ",Smart Plug,,,,42.923,0.043
+2023-12-30 18:00:00,0xuqZnaG,2-2 sub pump,Smart Plug,,,,0.464,0.000
+2023-12-30 18:00:00,9yUgkAEi,kidsroom,Smart Plug,,,,55.349,0.055
+2023-12-30 18:00:00,Qpx8btwV,MasterBedroom Plug,Smart Plug,,,,7.881,0.008
+2023-12-30 18:00:00,7pUZFnuY,4-5 - Stereo,Smart Plug,,,,22.279,0.022
+2023-12-30 18:00:00,B46U8aYU,Front Room,Smart Plug,,,,84.220,0.084
+2023-12-30 18:00:00,FJAoFYmy,1-3 - Host 2,Smart Plug,,,,0.096,0.000
+2023-12-30 18:00:00,genRkje3,6-5 Wifi,Smart Plug,,,,7.482,0.007
+2023-12-30 18:00:00,GzdITuA3,Side Garage,Smart Plug,,,,19.157,0.019
+2023-12-30 18:00:00,DzRXlfw9,1-2,Smart Plug,,,,19.144,0.019
+2023-12-30 18:00:00,IPwJmgEW,LG TV,Smart Plug,,,,108.776,0.109
+2023-12-30 18:00:00,always_on,Always On,Always On,,,,272.000,0.272
+2023-12-30 18:00:00,yKe4nWHQ,1-5 - Host 1,Smart Plug,,,,13.267,0.013
+2023-12-30 18:00:00,06auzWgQ,Backyard,Smart Plug,,,,13.802,0.014
+2023-12-30 18:00:00,Fq71rgOc,Enterntainment,Smart Plug,,,,0.038,0.000
+2023-12-30 18:00:00,ssi-520abe92,basementhallway,Smart Plug,,,,65.533,0.066
+2023-12-30 18:00:00,WMBobdaQ,Robo Vacuum,Smart Plug,,,,3.000,0.003
+2023-12-30 18:00:00,XxVJyEzs,Kitchen Basement,Smart Plug,,,,2.222,0.002
+2023-12-30 18:00:00,hiqvdUXO,Main Kitchen,Smart Plug,,,,7.802,0.008
+2023-12-30 18:00:00,z4VH33On,"4-2 - Bass Speaker ",Smart Plug,,,,4.923,0.005
+2023-12-30 18:00:00,2MWspPfA,basementlivingroom,Smart Plug,,,,0.622,0.001
+2023-12-30 18:00:00,ssi-83f71057,Switch LEDs,Smart Plug,,,,35.000,0.035
+2023-12-30 18:00:00,ssi-55115a66,Dreame Vacuum,Smart Plug,,,,3.000,0.003
+2023-12-30 18:00:00,mains,Total Usage,,,,,1212.153,1.212
+2023-12-30 18:00:00,RrIafJpu,Radon Fan,Smart Plug,,,,59.000,0.059
+2023-12-30 18:00:00,ut0E5XU0,Upstairs_Plug,Toaster,,,,157.479,0.157
+2023-12-30 19:00:00,INfY3kYr,6-2 - Apple TV,Smart Plug,,,,3.128,0.003
+2023-12-30 19:00:00,UsT4jYTY,"Hot water ",Smart Plug,,,,2.310,0.002
+2023-12-30 19:00:00,ssi-68d5ac08,hvac,Smart Plug,,,,1.500,0.002
+2023-12-30 19:00:00,NUa8XR79,"Mini Fridge ",Smart Plug,,,,12.448,0.012
+2023-12-30 19:00:00,T5QgvHdg,1-6 - Hub,Smart Plug,,,,1.511,0.002
+2023-12-30 19:00:00,g33Phtuz,Fridge,Smart Plug,,,,82.414,0.082
+2023-12-30 19:00:00,gvpFPq7K,"6-1 - Samsung ",Smart Plug,,,,90.189,0.090
+2023-12-30 19:00:00,tTMgrLYY,"2-3 UV ",Smart Plug,,,,43.096,0.043
+2023-12-30 19:00:00,0xuqZnaG,2-2 sub pump,Smart Plug,,,,0.557,0.001
+2023-12-30 19:00:00,9yUgkAEi,kidsroom,Smart Plug,,,,65.000,0.065
+2023-12-30 19:00:00,Qpx8btwV,MasterBedroom Plug,Smart Plug,,,,7.846,0.008
+2023-12-30 19:00:00,DnC2WeoP,Washer,Smart Plug,,,,0.005,0.000
+2023-12-30 19:00:00,9b3682d3,Microwave,Microwave,,,,109.994,0.110
+2023-12-30 19:00:00,7pUZFnuY,4-5 - Stereo,Smart Plug,,,,34.465,0.034
+2023-12-30 19:00:00,B46U8aYU,Front Room,Smart Plug,,,,85.000,0.085
+2023-12-30 19:00:00,FJAoFYmy,1-3 - Host 2,Smart Plug,,,,0.173,0.000
+2023-12-30 19:00:00,genRkje3,6-5 Wifi,Smart Plug,,,,7.395,0.007
+2023-12-30 19:00:00,DzRXlfw9,1-2,Smart Plug,,,,12.099,0.012
+2023-12-30 19:00:00,IPwJmgEW,LG TV,Smart Plug,,,,72.257,0.072
+2023-12-30 19:00:00,always_on,Always On,Always On,,,,272.000,0.272
+2023-12-30 19:00:00,yKe4nWHQ,1-5 - Host 1,Smart Plug,,,,13.311,0.013
+2023-12-30 19:00:00,06auzWgQ,Backyard,Smart Plug,,,,7.066,0.007
+2023-12-30 19:00:00,456301vf,BackYard,Smart Plug,,,,0.786,0.001
+2023-12-30 19:00:00,ssi-520abe92,basementhallway,Smart Plug,,,,1.400,0.001
+2023-12-30 19:00:00,WMBobdaQ,Robo Vacuum,Smart Plug,,,,3.000,0.003
+2023-12-30 19:00:00,hiqvdUXO,Main Kitchen,Smart Plug,,,,20.927,0.021
+2023-12-30 19:00:00,z4VH33On,"4-2 - Bass Speaker ",Smart Plug,,,,6.684,0.007
+2023-12-30 19:00:00,ssi-83f71057,Switch LEDs,Smart Plug,,,,35.000,0.035
+2023-12-30 19:00:00,ssi-55115a66,Dreame Vacuum,Smart Plug,,,,3.000,0.003
+2023-12-30 19:00:00,1fRxtFQK,Coat Closet,Smart Plug,,,,0.501,0.001
+2023-12-30 19:00:00,1499ddba,Well pump,Pump,,,"Basement ",18.549,0.019
+2023-12-30 19:00:00,mains,Total Usage,,,,,1311.654,1.312
+2023-12-30 19:00:00,RrIafJpu,Radon Fan,Smart Plug,,,,59.000,0.059
+2023-12-30 19:00:00,ut0E5XU0,Upstairs_Plug,Toaster,,,,245.472,0.245
+2023-12-30 19:00:00,RYQK85Ha,HVAC Upstairs,AC,,,,59.036,0.059
+2023-12-30 20:00:00,INfY3kYr,6-2 - Apple TV,Smart Plug,,,,3.139,0.003
+2023-12-30 20:00:00,UsT4jYTY,"Hot water ",Smart Plug,,,,46.309,0.046
+2023-12-30 20:00:00,ssi-68d5ac08,hvac,Smart Plug,,,,3.008,0.003
+2023-12-30 20:00:00,NUa8XR79,"Mini Fridge ",Smart Plug,,,,12.551,0.013
+2023-12-30 20:00:00,T5QgvHdg,1-6 - Hub,Smart Plug,,,,1.529,0.002
+2023-12-30 20:00:00,g33Phtuz,Fridge,Smart Plug,,,,63.246,0.063
+2023-12-30 20:00:00,gvpFPq7K,"6-1 - Samsung ",Smart Plug,,,,91.214,0.091
+2023-12-30 20:00:00,tTMgrLYY,"2-3 UV ",Smart Plug,,,,42.597,0.043
+2023-12-30 20:00:00,0xuqZnaG,2-2 sub pump,Smart Plug,,,,0.599,0.001
+2023-12-30 20:00:00,BYAGpdS2,Garage,Smart Plug,,,,0.744,0.001
+2023-12-30 20:00:00,9yUgkAEi,kidsroom,Smart Plug,,,,65.000,0.065
+2023-12-30 20:00:00,Qpx8btwV,MasterBedroom Plug,Smart Plug,,,,7.397,0.007
+2023-12-30 20:00:00,owpjwL7G,Entrance,Smart Plug,,,,2.861,0.003
+2023-12-30 20:00:00,7pUZFnuY,4-5 - Stereo,Smart Plug,,,,44.266,0.044
+2023-12-30 20:00:00,B46U8aYU,Front Room,Smart Plug,,,,85.000,0.085
+2023-12-30 20:00:00,FJAoFYmy,1-3 - Host 2,Smart Plug,,,,0.220,0.000
+2023-12-30 20:00:00,genRkje3,6-5 Wifi,Smart Plug,,,,7.476,0.007
+2023-12-30 20:00:00,DzRXlfw9,1-2,Smart Plug,,,,66.977,0.067
+2023-12-30 20:00:00,IPwJmgEW,LG TV,Smart Plug,,,,79.787,0.080
+2023-12-30 20:00:00,always_on,Always On,Always On,,,,272.000,0.272
+2023-12-30 20:00:00,yKe4nWHQ,1-5 - Host 1,Smart Plug,,,,13.280,0.013
+2023-12-30 20:00:00,06auzWgQ,Backyard,Smart Plug,,,,11.636,0.012
+2023-12-30 20:00:00,456301vf,BackYard,Smart Plug,,,,1.353,0.001
+2023-12-30 20:00:00,WMBobdaQ,Robo Vacuum,Smart Plug,,,,2.987,0.003
+2023-12-30 20:00:00,z4VH33On,"4-2 - Bass Speaker ",Smart Plug,,,,8.541,0.009
+2023-12-30 20:00:00,2MWspPfA,basementlivingroom,Smart Plug,,,,0.444,0.000
+2023-12-30 20:00:00,KqnnB036,Storage,Smart Plug,,,,1.060,0.001
+2023-12-30 20:00:00,ssi-83f71057,Switch LEDs,Smart Plug,,,,35.000,0.035
+2023-12-30 20:00:00,ssi-55115a66,Dreame Vacuum,Smart Plug,,,,3.000,0.003
+2023-12-30 20:00:00,mains,Total Usage,,,,,1332.598,1.333
+2023-12-30 20:00:00,FtqFkAJj,FrontYard,Smart Plug,,,,0.403,0.000
+2023-12-30 20:00:00,RrIafJpu,Radon Fan,Smart Plug,,,,59.000,0.059
+2023-12-30 20:00:00,ut0E5XU0,Upstairs_Plug,Toaster,,,,305.217,0.305
+2023-12-30 20:00:00,RYQK85Ha,HVAC Upstairs,AC,,,,43.945,0.044
+2023-12-30 21:00:00,INfY3kYr,6-2 - Apple TV,Smart Plug,,,,2.740,0.003
+2023-12-30 21:00:00,LwFtueMl,Ians Room,Smart Plug,,,,0.400,0.000
+2023-12-30 21:00:00,H6qTQUtY,frontdoorlight,Smart Plug,,,,0.398,0.000
+2023-12-30 21:00:00,UsT4jYTY,"Hot water ",Smart Plug,,,,3.539,0.004
+2023-12-30 21:00:00,NUa8XR79,"Mini Fridge ",Smart Plug,,,,12.612,0.013
+2023-12-30 21:00:00,T5QgvHdg,1-6 - Hub,Smart Plug,,,,1.532,0.002
+2023-12-30 21:00:00,g33Phtuz,Fridge,Smart Plug,,,,61.369,0.061
+2023-12-30 21:00:00,gvpFPq7K,"6-1 - Samsung ",Smart Plug,,,,68.551,0.069
+2023-12-30 21:00:00,tTMgrLYY,"2-3 UV ",Smart Plug,,,,42.476,0.042
+2023-12-30 21:00:00,0xuqZnaG,2-2 sub pump,Smart Plug,,,,0.631,0.001
+2023-12-30 21:00:00,9yUgkAEi,kidsroom,Smart Plug,,,,49.075,0.049
+2023-12-30 21:00:00,Qpx8btwV,MasterBedroom Plug,Smart Plug,,,,7.961,0.008
+2023-12-30 21:00:00,DnC2WeoP,Washer,Smart Plug,,,,0.025,0.000
+2023-12-30 21:00:00,owpjwL7G,Entrance,Smart Plug,,,,0.325,0.000
+2023-12-30 21:00:00,7pUZFnuY,4-5 - Stereo,Smart Plug,,,,44.541,0.045
+2023-12-30 21:00:00,B46U8aYU,Front Room,Smart Plug,,,,63.938,0.064
+2023-12-30 21:00:00,FJAoFYmy,1-3 - Host 2,Smart Plug,,,,0.134,0.000
+2023-12-30 21:00:00,genRkje3,6-5 Wifi,Smart Plug,,,,7.669,0.008
+2023-12-30 21:00:00,GzdITuA3,Side Garage,Smart Plug,,,,21.952,0.022
+2023-12-30 21:00:00,DzRXlfw9,1-2,Smart Plug,,,,29.423,0.029
+2023-12-30 21:00:00,IPwJmgEW,LG TV,Smart Plug,,,,70.771,0.071
+2023-12-30 21:00:00,always_on,Always On,Always On,,,,272.000,0.272
+2023-12-30 21:00:00,e4b9b934,Pump 3,Pump,,,,1.164,0.001
+2023-12-30 21:00:00,yKe4nWHQ,1-5 - Host 1,Smart Plug,,,,13.504,0.014
+2023-12-30 21:00:00,06auzWgQ,Backyard,Smart Plug,,,,1.513,0.002
+2023-12-30 21:00:00,Fq71rgOc,Enterntainment,Smart Plug,,,,0.055,0.000
+2023-12-30 21:00:00,456301vf,BackYard,Smart Plug,,,,0.269,0.000
+2023-12-30 21:00:00,DHAufUrp,Study,Smart Plug,,,,10.725,0.011
+2023-12-30 21:00:00,TpW50HtL,Bathroom 1,Smart Plug,,,,23.038,0.023
+2023-12-30 21:00:00,ssi-a4b19bd,Night Fan,Smart Plug,,,,29.875,0.030
+2023-12-30 21:00:00,NMN6F9b4,Hallway,Smart Plug,,,,1.550,0.002
+2023-12-30 21:00:00,413aeab9,Light 2,Light,,,,6.518,0.007
+2023-12-30 21:00:00,WMBobdaQ,Robo Vacuum,Smart Plug,,,,2.920,0.003
+2023-12-30 21:00:00,z4VH33On,"4-2 - Bass Speaker ",Smart Plug,,,,8.571,0.009
+2023-12-30 21:00:00,6bUeX3OE,Master Closet,Smart Plug,,,,0.188,0.000
+2023-12-30 21:00:00,ssi-83f71057,Switch LEDs,Smart Plug,,,,35.000,0.035
+2023-12-30 21:00:00,EzRcwH5m,Jakes Room,Smart Plug,,,,6.661,0.007
+2023-12-30 21:00:00,ssi-55115a66,Dreame Vacuum,Smart Plug,,,,3.387,0.003
+2023-12-30 21:00:00,1499ddba,Well pump,Pump,,,"Basement ",17.665,0.018
+2023-12-30 21:00:00,mains,Total Usage,,,,,1524.451,1.524
+2023-12-30 21:00:00,RrIafJpu,Radon Fan,Smart Plug,,,,59.000,0.059
+2023-12-30 21:00:00,6SjiiZ6h,HVAC Main,AC,,,,156.908,0.157
+2023-12-30 21:00:00,ut0E5XU0,Upstairs_Plug,Toaster,,,,304.535,0.305
+2023-12-30 21:00:00,RYQK85Ha,HVAC Upstairs,AC,,,,114.317,0.114
+2023-12-30 22:00:00,INfY3kYr,6-2 - Apple TV,Smart Plug,,,,1.656,0.002
+2023-12-30 22:00:00,UsT4jYTY,"Hot water ",Smart Plug,,,,3.651,0.004
+2023-12-30 22:00:00,ssi-68d5ac08,hvac,Smart Plug,,,,1.895,0.002
+2023-12-30 22:00:00,NUa8XR79,"Mini Fridge ",Smart Plug,,,,9.615,0.010
+2023-12-30 22:00:00,T5QgvHdg,1-6 - Hub,Smart Plug,,,,1.505,0.002
+2023-12-30 22:00:00,g33Phtuz,Fridge,Smart Plug,,,,64.624,0.065
+2023-12-30 22:00:00,tTMgrLYY,"2-3 UV ",Smart Plug,,,,43.218,0.043
+2023-12-30 22:00:00,0xuqZnaG,2-2 sub pump,Smart Plug,,,,0.544,0.001
+2023-12-30 22:00:00,BYAGpdS2,Garage,Smart Plug,,,,1.022,0.001
+2023-12-30 22:00:00,Qpx8btwV,MasterBedroom Plug,Smart Plug,,,,8.059,0.008
+2023-12-30 22:00:00,7pUZFnuY,4-5 - Stereo,Smart Plug,,,,31.610,0.032
+2023-12-30 22:00:00,FJAoFYmy,1-3 - Host 2,Smart Plug,,,,0.113,0.000
+2023-12-30 22:00:00,genRkje3,6-5 Wifi,Smart Plug,,,,8.064,0.008
+2023-12-30 22:00:00,DzRXlfw9,1-2,Smart Plug,,,,8.819,0.009
+2023-12-30 22:00:00,always_on,Always On,Always On,,,,272.000,0.272
+2023-12-30 22:00:00,e4b9b934,Pump 3,Pump,,,,0.397,0.000
+2023-12-30 22:00:00,yKe4nWHQ,1-5 - Host 1,Smart Plug,,,,13.538,0.014
+2023-12-30 22:00:00,TpW50HtL,Bathroom 1,Smart Plug,,,,5.777,0.006
+2023-12-30 22:00:00,ssi-a4b19bd,Night Fan,Smart Plug,,,,30.000,0.030
+2023-12-30 22:00:00,413aeab9,Light 2,Light,,,,78.734,0.079
+2023-12-30 22:00:00,WMBobdaQ,Robo Vacuum,Smart Plug,,,,2.988,0.003
+2023-12-30 22:00:00,78d58f33,Shoe Air Dryer,Mystery Heat,,,,263.998,0.264
+2023-12-30 22:00:00,z4VH33On,"4-2 - Bass Speaker ",Smart Plug,,,,6.058,0.006
+2023-12-30 22:00:00,2MWspPfA,basementlivingroom,Smart Plug,,,,1.622,0.002
+2023-12-30 22:00:00,KqnnB036,Storage,Smart Plug,,,,0.517,0.001
+2023-12-30 22:00:00,ssi-83f71057,Switch LEDs,Smart Plug,,,,35.000,0.035
+2023-12-30 22:00:00,EzRcwH5m,Jakes Room,Smart Plug,,,,0.091,0.000
+2023-12-30 22:00:00,ssi-55115a66,Dreame Vacuum,Smart Plug,,,,3.000,0.003
+2023-12-30 22:00:00,1499ddba,Well pump,Pump,,,"Basement ",19.983,0.020
+2023-12-30 22:00:00,mains,Total Usage,,,,,952.152,0.952
+2023-12-30 22:00:00,ssi-ac2fa4f5,Bathroom Fan,Smart Plug,,,,3.004,0.003
+2023-12-30 22:00:00,RrIafJpu,Radon Fan,Smart Plug,,,,59.000,0.059
+2023-12-30 22:00:00,6SjiiZ6h,HVAC Main,AC,,,,152.712,0.153
+2023-12-30 22:00:00,ut0E5XU0,Upstairs_Plug,Toaster,,,,215.157,0.215
+2023-12-30 23:00:00,INfY3kYr,6-2 - Apple TV,Smart Plug,,,,1.746,0.002
+2023-12-30 23:00:00,UsT4jYTY,"Hot water ",Smart Plug,,,,3.715,0.004
+2023-12-30 23:00:00,NUa8XR79,"Mini Fridge ",Smart Plug,,,,0.003,0.000
+2023-12-30 23:00:00,T5QgvHdg,1-6 - Hub,Smart Plug,,,,1.452,0.001
+2023-12-30 23:00:00,g33Phtuz,Fridge,Smart Plug,,,,75.689,0.076
+2023-12-30 23:00:00,jXf1rXPK,OptiMist,Smart Plug,,,,0.012,0.000
+2023-12-30 23:00:00,tTMgrLYY,"2-3 UV ",Smart Plug,,,,33.994,0.034
+2023-12-30 23:00:00,0xuqZnaG,2-2 sub pump,Smart Plug,,,,0.998,0.001
+2023-12-30 23:00:00,Qpx8btwV,MasterBedroom Plug,Smart Plug,,,,8.229,0.008
+2023-12-30 23:00:00,DnC2WeoP,Washer,Smart Plug,,,,0.006,0.000
+2023-12-30 23:00:00,FJAoFYmy,1-3 - Host 2,Smart Plug,,,,0.145,0.000
+2023-12-30 23:00:00,genRkje3,6-5 Wifi,Smart Plug,,,,7.635,0.008
+2023-12-30 23:00:00,DzRXlfw9,1-2,Smart Plug,,,,62.656,0.063
+2023-12-30 23:00:00,always_on,Always On,Always On,,,,270.998,0.271
+2023-12-30 23:00:00,e4b9b934,Pump 3,Pump,,,,1.007,0.001
+2023-12-30 23:00:00,yKe4nWHQ,1-5 - Host 1,Smart Plug,,,,13.279,0.013
+2023-12-30 23:00:00,ssi-a4b19bd,Night Fan,Smart Plug,,,,30.000,0.030
+2023-12-30 23:00:00,WMBobdaQ,Robo Vacuum,Smart Plug,,,,11.320,0.011
+2023-12-30 23:00:00,78d58f33,Shoe Air Dryer,Mystery Heat,,,,215.857,0.216
+2023-12-30 23:00:00,ssi-83f71057,Switch LEDs,Smart Plug,,,,0.082,0.000
+2023-12-30 23:00:00,ssi-55115a66,Dreame Vacuum,Smart Plug,,,,3.000,0.003
+2023-12-30 23:00:00,1499ddba,Well pump,Pump,,,"Basement ",357.824,0.358
+2023-12-30 23:00:00,mains,Total Usage,,,,,1164.965,1.165
+2023-12-30 23:00:00,RrIafJpu,Radon Fan,Smart Plug,,,,59.000,0.059
+2023-12-30 23:00:00,6SjiiZ6h,HVAC Main,AC,,,,154.533,0.155
+2023-12-30 23:00:00,ut0E5XU0,Upstairs_Plug,Toaster,,,,2.891,0.003
+2023-12-30 23:00:00,RYQK85Ha,HVAC Upstairs,AC,,,,102.981,0.103
+2023-12-31 00:00:00,INfY3kYr,6-2 - Apple TV,Smart Plug,,,,1.996,0.002
+2023-12-31 00:00:00,ssi-a4b19bd,Night Fan,Smart Plug,,,,30.000,0.030
+2023-12-31 00:00:00,WMBobdaQ,Robo Vacuum,Smart Plug,,,,20.000,0.020
+2023-12-31 00:00:00,UsT4jYTY,"Hot water ",Smart Plug,,,,3.344,0.003
+2023-12-31 00:00:00,78d58f33,Shoe Air Dryer,Mystery Heat,,,,44.930,0.045
+2023-12-31 00:00:00,T5QgvHdg,1-6 - Hub,Smart Plug,,,,1.448,0.001
+2023-12-31 00:00:00,g33Phtuz,Fridge,Smart Plug,,,,75.809,0.076
+2023-12-31 00:00:00,tTMgrLYY,"2-3 UV ",Smart Plug,,,,42.531,0.043
+2023-12-31 00:00:00,0xuqZnaG,2-2 sub pump,Smart Plug,,,,0.762,0.001
+2023-12-31 00:00:00,Qpx8btwV,MasterBedroom Plug,Smart Plug,,,,8.178,0.008
+2023-12-31 00:00:00,ssi-55115a66,Dreame Vacuum,Smart Plug,,,,3.000,0.003
+2023-12-31 00:00:00,FJAoFYmy,1-3 - Host 2,Smart Plug,,,,0.161,0.000
+2023-12-31 00:00:00,genRkje3,6-5 Wifi,Smart Plug,,,,7.314,0.007
+2023-12-31 00:00:00,mains,Total Usage,,,,,767.230,0.767
+2023-12-31 00:00:00,DzRXlfw9,1-2,Smart Plug,,,,25.764,0.026
+2023-12-31 00:00:00,always_on,Always On,Always On,,,,271.500,0.271
+2023-12-31 00:00:00,e4b9b934,Pump 3,Pump,,,,0.767,0.001
+2023-12-31 00:00:00,yKe4nWHQ,1-5 - Host 1,Smart Plug,,,,13.129,0.013
+2023-12-31 00:00:00,RrIafJpu,Radon Fan,Smart Plug,,,,59.000,0.059
+2023-12-31 00:00:00,6SjiiZ6h,HVAC Main,AC,,,,137.987,0.138
+2023-12-31 00:00:00,ut0E5XU0,Upstairs_Plug,Toaster,,,,2.935,0.003
+2023-12-31 00:00:00,RYQK85Ha,HVAC Upstairs,AC,,,,105.411,0.105

@@ -1,5 +1,4 @@
 from flask import Flask, request, jsonify, render_template
-import pandas as pd
 from prophet import Prophet
 import matplotlib
 matplotlib.use('Agg')
@@ -8,12 +7,35 @@ import matplotlib.dates as mdates
 import base64
 from io import BytesIO
 application = Flask(__name__)
+application.secret_key = 'your_secret_key_here'
 
-# Read and preprocess the forecast data
-forecast_df = pd.read_csv('forecast_new.csv', comment='#')
+import pandas as pd
+from flask import flash, redirect
+# Load the CSV file
+file_path = 'data/forecast_new.csv'  # Replace with your CSV file path
+forecast_df = pd.read_csv(file_path, comment='#')
+
+# Convert 'DateTime' to datetime objects
 forecast_df['ds'] = pd.to_datetime(forecast_df['DateTime'])
-forecast_df = forecast_df.groupby('ds')['kWh'].sum().reset_index()
-forecast_df.rename(columns={'kWh': 'y'}, inplace=True)
+
+# Aggregate 'kWh' values by 'ds'
+aggregated_kWh = forecast_df.groupby('ds')['kWh'].sum().rename('y').reset_index()
+
+# Check if the columns exist before attempting to drop them
+#columns_to_drop = ['DateTime', 'kWh']
+#columns_to_drop = ['DateTime']
+#columns_to_drop = [col for col in columns_to_drop if col in forecast_df.columns]
+
+# Drop the columns and merge with aggregated values
+forecast_df = forecast_df.drop_duplicates().merge(aggregated_kWh, on='ds')
+
+# Now, forecast_df contains 'ds', 'y', and other columns like 'Device ID' and 'Name'
+
+# # Read and preprocess the forecast data
+# forecast_df = pd.read_csv('forecast_new.csv', comment='#')
+# forecast_df['ds'] = pd.to_datetime(forecast_df['DateTime'])
+# forecast_df = forecast_df.groupby('ds')['kWh'].sum().reset_index()
+# forecast_df.rename(columns={'kWh': 'y'}, inplace=True)
 
 model = Prophet(daily_seasonality=True)
 model.fit(forecast_df)
@@ -51,10 +73,121 @@ def index():
             else:
                 graph_url = plot_forecast(forecast, pd.DataFrame(), start_date)
         else:
-            print("bad erro")
+            print("No Date provided error - Index.html")
             # Handle case where date is not entered
 
     return render_template('index.html', forecast_data=forecast_data, graph_url=graph_url)
+# Dummy functions for demonstration
+
+
+def get_top_10_devices():
+    # Aggregate total watts used by each device
+    total_watts_by_device = forecast_df.groupby('Device ID')['y'].sum()
+
+    # Sort by total watts in descending order and get top 10 devices
+    top_10_devices = total_watts_by_device.sort_values(ascending=False).head(10)
+
+    #print(top_10_devices)
+    return top_10_devices
+
+from prophet import Prophet
+
+@application.route('/upload', methods=['GET', 'POST'])
+def upload_file():
+    global forecast_df, model  # Declare global variables
+
+    if request.method == 'POST':
+        if 'file' not in request.files:
+            flash('No file part')
+            return redirect(request.url)
+
+        file = request.files['file']
+        if file.filename == '':
+            flash('No selected file')
+            return redirect(request.url)
+
+        if file and allowed_file(file.filename):
+
+            if forecast_df is not None:
+                del forecast_df
+            forecast_df = pd.read_csv(file, low_memory=False, comment='#')
+
+            if 'DateTime' not in forecast_df.columns:
+                flash('Uploaded file must contain a DateTime column')
+                return redirect(request.url)
+
+            forecast_df['ds'] = pd.to_datetime(forecast_df['DateTime'])
+            aggregated_kWh = forecast_df.groupby('ds')['kWh'].sum().rename('y').reset_index()
+            forecast_df = forecast_df.drop(['DateTime'], axis=1).drop_duplicates().merge(aggregated_kWh, on='ds')
+
+            # Instantiate a new Prophet model
+            if model is not None:
+                del model
+            model = Prophet(daily_seasonality=True)
+            model.fit(forecast_df)
+
+            flash('File successfully uploaded and processed')
+            return redirect('/')
+
+    return render_template('upload.html')
+
+
+@application.route('/device_forecast', methods=['GET', 'POST'])
+def device_forecast():
+    forecast_data = None
+    graph_url = None
+    #print("Debug")
+    #print(forecast_df.columns)
+    top_10_devices = get_top_10_devices()
+    
+    #print(top_10_devices)
+    unique_devices = forecast_df[['Device ID', 'Name']].drop_duplicates()
+    unique_devices_filtered = unique_devices[unique_devices['Device ID'].isin(top_10_devices)]
+    unique_devices_dict = unique_devices_filtered.to_dict(orient='records')
+    #unique_devices_filtered = unique_devices[unique_devices['Device ID'].isin(top_10_devices)]
+
+    #print(unique_devices)
+    print(forecast_df.columns)
+    if request.method == 'POST':
+        print("Form data received:")
+        for key in request.form:
+            print(f"{key}: {request.form[key]}")
+        device_id = request.form.get('device_id')
+        print("Device: " + device_id)
+        time_range = request.form.get('range', 'day')
+
+        # Filter data for the selected device
+        forecast_df_filtered = forecast_df[forecast_df['Device ID'] == device_id]
+        
+        if forecast_df_filtered.empty:
+            print("ERROR:  No paramater passed: " + device_id)
+            return render_template('device_forecast.html', unique_devices=unique_devices_dict, error="Device not found")
+
+        # Prepare the model and data for forecasting
+        forecast_df_filtered = forecast_df_filtered.groupby('ds')['kWh'].sum().reset_index()
+        forecast_df_filtered.rename(columns={'kWh': 'y'}, inplace=True)
+
+        model = Prophet(daily_seasonality=True)
+        model.fit(forecast_df_filtered)
+        
+        # Generate forecast for the specified period
+        try:
+            start_date = pd.to_datetime('today')  # You can modify this as needed
+            forecast = get_forecast_for_period(model, start_date, time_range)
+            forecast_data = forecast.to_html(classes="table table-striped table-bordered", border=0, index=False)
+            
+            # Optionally, you can include actual data comparison here
+            # ...
+
+            graph_url = plot_forecast(forecast, pd.DataFrame(), start_date)
+
+        except Exception as e:
+            # Handle exceptions
+            return render_template('device_forecast.html', error=str(e))
+
+    return render_template('device_forecast.html', forecast_data=forecast_data, graph_url=graph_url, unique_devices=unique_devices,top_10_devices=top_10_devices)
+
+
 def plot_forecast(forecast, actual, date):
     plt.figure(figsize=(10, 4))
     plt.plot(forecast['ds'], forecast['yhat_watts'], label='Predicted')
@@ -166,8 +299,6 @@ def get_forecast_for_period(model, start_date, period):
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ['csv']
 
-if __name__ == '__main__':
-    application.run(debug=True)
 
 def plot_forecast(forecast, actual, date):
     plt.figure(figsize=(10, 4))
