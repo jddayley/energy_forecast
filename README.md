@@ -14,21 +14,32 @@ The main goal of this project is to provide accurate forecasts of energy consump
 </div>
 
 # Energy Consumption Forecasting Application
-<img src="img/app-ss.png"/>
-## Overview
-This Flask application provides energy consumption forecasting using the Prophet model. It allows users to upload actual energy consumption data and compare it with forecasted data.
+
+## Introduction
+
+This Flask application provides a platform for energy consumption forecasting using Facebook's Prophet time series forecasting tool. The application allows users to upload historical energy consumption data, view forecasts for energy usage, and analyze the performance of predictions against actual data.
 
 ## Features
-- Forecast energy consumption based on historical data.
-- Upload actual energy consumption data via API.
-- Compare forecasted data with actual data visually.
+
+- **Data Upload**: Users can upload their own dataset in CSV format for forecasting.
+- **Forecast Visualization**: View energy consumption forecasts over a specified time range.
+- **Comparison with Actual Data**: Users can upload actual consumption data to compare against forecasts.
+- **Top 10 Device Analysis**: Analyze energy consumption patterns for the top 10 most energy-intensive devices.
 
 ## Installation
-To set up the application, follow these steps:
-1. Clone the repository: `git clone [repository-url]`
-2. Install dependencies: `pip install -r requirements.txt`
-3. Run the application: `flask run`
 
+Before running the application, ensure that you have Python and all required libraries installed. The main dependencies are Flask and Prophet.
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://your-repository-url.git
+   cd your-repository-folder ```
+ ```bash
+ python -m venv venv ```
+ source venv/bin/activate  # On Windows use `venv\Scripts\activate
+ pip install -r requirements.txt
+```
 ## Usage
 To use the application:
  - Navigate to `http://localhost:5000`.
