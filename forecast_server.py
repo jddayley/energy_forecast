@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify, render_template, flash, redirect
 from prophet import Prophet
 import matplotlib
 matplotlib.use('Agg')
@@ -6,40 +6,87 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 import base64
 from io import BytesIO
+import pandas as pd
+import os
+from joblib import dump, load
+import logging
+
 application = Flask(__name__)
 application.secret_key = 'your_secret_key_here'
 
-import pandas as pd
-from flask import flash, redirect
-# Load the CSV file
-file_path = 'data/forecast_new.csv'  # Replace with your CSV file path
-forecast_df = pd.read_csv(file_path, comment='#')
+MODEL_FILENAME = 'prophet_model.joblib'
+DATA_FILENAME = 'forecast_data.joblib'
 
-# Convert 'DateTime' to datetime objects
-forecast_df['ds'] = pd.to_datetime(forecast_df['DateTime'])
+def load_model(filename):
+    if os.path.exists(filename):
+        return load(filename)
+    return None
 
-# Aggregate 'kWh' values by 'ds'
-aggregated_kWh = forecast_df.groupby('ds')['kWh'].sum().rename('y').reset_index()
+def load_data(filename):
+    if os.path.exists(filename):
+        return load(filename)
+    return None
 
-# Check if the columns exist before attempting to drop them
-#columns_to_drop = ['DateTime', 'kWh']
-#columns_to_drop = ['DateTime']
-#columns_to_drop = [col for col in columns_to_drop if col in forecast_df.columns]
+def save_data(data, filename):
+    dump(data, filename)
 
-# Drop the columns and merge with aggregated values
-forecast_df = forecast_df.drop_duplicates().merge(aggregated_kWh, on='ds')
+model = load_model(MODEL_FILENAME)
+forecast_df = load_data(DATA_FILENAME)
 
-# Now, forecast_df contains 'ds', 'y', and other columns like 'Device ID' and 'Name'
+if model is None or forecast_df is None:
+    # Load and preprocess data
+    file_path = 'data/forecast_new.csv'  # Replace with your CSV file path
+    forecast_df = pd.read_csv(file_path, comment='#')
+    forecast_df['ds'] = pd.to_datetime(forecast_df['DateTime'])
+    aggregated_kWh = forecast_df.groupby('ds')['kWh'].sum().rename('y').reset_index()
+    forecast_df = forecast_df.drop_duplicates().merge(aggregated_kWh, on='ds')
+    save_data(forecast_df, DATA_FILENAME)
 
-# # Read and preprocess the forecast data
-# forecast_df = pd.read_csv('forecast_new.csv', comment='#')
-# forecast_df['ds'] = pd.to_datetime(forecast_df['DateTime'])
-# forecast_df = forecast_df.groupby('ds')['kWh'].sum().reset_index()
-# forecast_df.rename(columns={'kWh': 'y'}, inplace=True)
+    # Train and save the model
+    model = Prophet(daily_seasonality=True)
+    model.fit(forecast_df)
+    dump(model, MODEL_FILENAME)
 
-model = Prophet(daily_seasonality=True)
-model.fit(forecast_df)
+# Function to save the Prophet model using joblib
+def save_model(model, filename):
+    dump(model, filename)
 
+
+# Function to set up or load the Prophet model
+def setup_model():
+    global model
+    model = load_model(MODEL_FILENAME)
+    if model is None:
+        model = Prophet(daily_seasonality=True)
+        model.fit(forecast_df)
+        save_model(model, MODEL_FILENAME)
+
+# Call setup_model when starting the application
+setup_model()
+
+def save_model(model, filename):
+    dump(model, filename)
+
+# Define a function to load the Prophet model using joblib
+def load_model(filename):
+    if os.path.exists(filename):
+        return load(filename)
+    else:
+        return None
+
+# Function to set up the model
+def setup_model():
+    global model
+    model_filename = 'prophet_model.joblib'
+
+    # Try to load the model if it was previously saved
+    model = load_model(model_filename)
+
+    # If the model does not exist, fit a new model and save it
+    if model is None:
+        model = Prophet(daily_seasonality=True)
+        model.fit(forecast_df)
+        save_model(model, model_filename)
 @application.route('/', methods=['GET', 'POST'])
 def index():
     forecast_data = None
@@ -80,17 +127,16 @@ def index():
 # Dummy functions for demonstration
 
 
-def get_top_10_devices():
+def get_top_devices():
     # Aggregate total watts used by each device
     total_watts_by_device = forecast_df.groupby('Device ID')['y'].sum()
 
     # Sort by total watts in descending order and get top 10 devices
-    top_10_devices = total_watts_by_device.sort_values(ascending=False).head(10)
+    top_devices = total_watts_by_device.sort_values(ascending=False).head(20)
 
-    #print(top_10_devices)
-    return top_10_devices
+    #print(top_devices)
+    return top_devices
 
-from prophet import Prophet
 
 @application.route('/upload', methods=['GET', 'POST'])
 def upload_file():
@@ -136,18 +182,27 @@ def upload_file():
 def device_forecast():
     forecast_data = None
     graph_url = None
-    #print("Debug")
-    #print(forecast_df.columns)
-    top_10_devices = get_top_10_devices()
-    
-    #print(top_10_devices)
-    unique_devices = forecast_df[['Device ID', 'Name']].drop_duplicates()
-    unique_devices_filtered = unique_devices[unique_devices['Device ID'].isin(top_10_devices)]
-    unique_devices_dict = unique_devices_filtered.to_dict(orient='records')
-    #unique_devices_filtered = unique_devices[unique_devices['Device ID'].isin(top_10_devices)]
-
-    #print(unique_devices)
+    print("Debug")
     print(forecast_df.columns)
+    top_devices = get_top_devices()
+    print(top_devices)
+    unique_devices = forecast_df[['Device ID', 'Name']].drop_duplicates()
+    # Assuming total_watts_by_device and unique_devices are already defined
+
+    # Sort by total wattage and get the top 20 devices
+    top_devices =  get_top_devices()
+   
+
+    # Extract the device IDs from the index of top_devices
+    top_device_ids = top_devices.index
+
+    # Filter unique_devices to include only those in top_device_ids
+    unique_devices = unique_devices[unique_devices['Device ID'].isin(top_device_ids)]
+
+    print(unique_devices)
+        #unique_devices_filtered = unique_devices[unique_devices['Device ID'].isin(top_devices)]
+
+
     if request.method == 'POST':
         print("Form data received:")
         for key in request.form:
@@ -161,7 +216,7 @@ def device_forecast():
         
         if forecast_df_filtered.empty:
             print("ERROR:  No paramater passed: " + device_id)
-            return render_template('device_forecast.html', unique_devices=unique_devices_dict, error="Device not found")
+            return render_template('device_forecast.html', unique_devices=unique_devices, error="Device not found")
 
         # Prepare the model and data for forecasting
         forecast_df_filtered = forecast_df_filtered.groupby('ds')['kWh'].sum().reset_index()
@@ -185,7 +240,7 @@ def device_forecast():
             # Handle exceptions
             return render_template('device_forecast.html', error=str(e))
 
-    return render_template('device_forecast.html', forecast_data=forecast_data, graph_url=graph_url, unique_devices=unique_devices,top_10_devices=top_10_devices)
+    return render_template('device_forecast.html', forecast_data=forecast_data, graph_url=graph_url, unique_devices=unique_devices,top_devices=top_devices)
 
 
 def plot_forecast(forecast, actual, date):
@@ -349,4 +404,4 @@ def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ['csv']
 
 if __name__ == '__main__':
-    application.run(debug=True)
+    application.run(debug=True, port=9000)
